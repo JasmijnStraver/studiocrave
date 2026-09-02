@@ -539,6 +539,135 @@ ul { list-style: none; }
 .scroll-top.visible { opacity: 1; visibility: visible; }
 .scroll-top:hover { background: var(--gold); }
 
+/* BREADCRUMBS */
+.breadcrumbs {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 16px 32px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  color: rgba(26,10,13,0.5);
+}
+.breadcrumbs a { color: var(--burgundy); text-decoration: none; }
+.breadcrumbs a:hover { text-decoration: underline; }
+.breadcrumbs .crumb-sep { margin: 0 8px; color: rgba(26,10,13,0.3); }
+.breadcrumbs [aria-current="page"] { color: rgba(26,10,13,0.55); }
+
+/* OUTLINE DARK BUTTON (for use on light sections) */
+.btn-outline-dark {
+  display: inline-block;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 16px 34px;
+  background: transparent;
+  color: var(--midnight);
+  border: 1px solid rgba(61,20,25,0.3);
+  transition: all 0.25s ease;
+}
+.btn-outline-dark:hover { border-color: var(--pepper); color: var(--pepper); }
+
+/* COURSE CARD LINKS (home / kitchen page grid) */
+a.course-link { text-decoration: none; color: inherit; display: grid; }
+a.course-link:hover { background: rgba(200,0,26,0.03); }
+
+/* COURSE DETAIL (7-course page) */
+.course-detail {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 32px;
+  align-items: start;
+  max-width: 820px;
+  margin: 0 auto;
+}
+.course-detail-number {
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: 56px;
+  font-weight: 600;
+  color: var(--gold);
+  opacity: 0.6;
+  line-height: 1;
+}
+
+/* PORTFOLIO TEASER GRID (home + portfolio index) */
+.portfolio-teaser-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+.portfolio-teaser { display: block; text-decoration: none; color: inherit; }
+.portfolio-teaser img { width: 100%; aspect-ratio: 4/5; object-fit: cover; transition: transform 0.3s ease; }
+.portfolio-teaser:hover img { transform: scale(1.03); }
+.portfolio-teaser-label { padding: 14px 2px; }
+.portfolio-teaser-label span {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--midnight);
+}
+.portfolio-teaser-label small { color: rgba(61,20,25,0.55); font-size: 13px; }
+
+/* CASE STUDY (portfolio project pages) */
+.case-study {
+  max-width: 720px;
+  margin: 0 auto;
+  display: grid;
+  gap: 34px;
+}
+.case-block h2 {
+  font-family: var(--font-heading);
+  font-style: italic;
+  color: var(--pepper);
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.case-block p { font-size: 16px; color: var(--ink); }
+
+/* CONTACT FORM */
+.contact-form { max-width: 640px; margin: 0 auto; display: grid; gap: 22px; }
+.form-row { display: grid; gap: 8px; }
+.form-row-group { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.contact-form label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--burgundy);
+}
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  font-family: var(--font-body);
+  font-size: 15px;
+  padding: 12px 14px;
+  border: 1px solid rgba(107,26,42,0.25);
+  background: #fff;
+  color: var(--ink);
+}
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  outline: 2px solid var(--gold);
+  outline-offset: 1px;
+}
+.contact-form button { justify-self: start; }
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px;
+  overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track { animation: none; }
+  * { transition: none !important; }
+}
+
 /* RESPONSIVE */
 @media (max-width: 900px) {
   .hero-split { grid-template-columns: 1fr; }
@@ -570,4 +699,7 @@ ul { list-style: none; }
   .photo-strip { grid-template-columns: repeat(2, 1fr); }
   .pos-row { flex-direction: column; align-items: flex-start; gap: 6px; }
   .pos-value { text-align: left; }
+  .portfolio-teaser-grid { grid-template-columns: repeat(2, 1fr); }
+  .course-detail { grid-template-columns: 1fr; gap: 12px; }
+  .form-row-group { grid-template-columns: 1fr; }
 }
