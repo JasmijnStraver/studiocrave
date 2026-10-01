@@ -304,7 +304,7 @@ def page(path, title, description, h1, body, trail, extra_jsonld=None, og_image=
 <link rel="stylesheet" href="/css/tbk.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 {ld_html}
 </head>
 <body>
@@ -400,7 +400,7 @@ def build_home():
     <div class="pos-table">
       <div class="pos-row"><div class="pos-label">Ingredients</div><div class="pos-value">Understanding the business behind the brand</div></div>
       <div class="pos-row"><div class="pos-label">Recipe</div><div class="pos-value">Strategy and positioning</div></div>
-      <div class="pos-row" style="border-bottom:1px solid var(--gold);"><div class="pos-label" style="color:var(--pepper);">Serve &#x2728;</div><div class="pos-value" style="color:var(--creme);font-weight:600;">A launched brand people recognize and crave</div></div>
+      <div class="pos-row" style="border-bottom:1px solid var(--crave-red);"><div class="pos-label" style="color:var(--crave-red);">Serve &#x2728;</div><div class="pos-value" style="color:var(--creme);font-weight:600;">A launched brand people recognize and crave</div></div>
     </div>
     <p style="text-align:center;margin-top:36px;"><a href="/the-branding-kitchen/" class="btn-outline-light">Explore The Branding Kitchen</a></p>
   </div>
@@ -535,7 +535,7 @@ def build_branding_kitchen():
       <div class="pos-row"><div class="pos-label">Cut</div><div class="pos-value">Positioning &amp; focus &mdash; Course 04</div></div>
       <div class="pos-row"><div class="pos-label">Plating</div><div class="pos-value">Visual identity &amp; presentation &mdash; Course 05</div></div>
       <div class="pos-row"><div class="pos-label">Pairing</div><div class="pos-value">Offer, price &amp; client journey &mdash; Course 06</div></div>
-      <div class="pos-row" style="border-bottom:1px solid var(--gold);"><div class="pos-label" style="color:var(--pepper);">Serve &#x2728;</div><div class="pos-value" style="color:var(--creme);font-weight:600;">Launch &mdash; Course 07</div></div>
+      <div class="pos-row" style="border-bottom:1px solid var(--crave-red);"><div class="pos-label" style="color:var(--crave-red);">Serve &#x2728;</div><div class="pos-value" style="color:var(--creme);font-weight:600;">Launch &mdash; Course 07</div></div>
     </div>
   </div>
 </section>
@@ -571,8 +571,8 @@ def build_seven_courses():
     <div class="course-detail">
       <div class="course-detail-number">{c['n']}</div>
       <div>
-        <h2 class="{title_cls}" style="font-family:var(--font-heading);font-size:clamp(28px,3.4vw,42px);font-weight:600;margin-bottom:10px;">{esc(c['name'])}</h2>
-        <p style="font-family:var(--font-heading);font-style:italic;color:var(--pepper);font-size:18px;margin-bottom:20px;">{esc(c['short'])}</p>
+        <h2 class="{title_cls}" style="font-family:var(--font-heading);font-size:clamp(28px,3.4vw,42px);font-weight:800;margin-bottom:10px;">{esc(c['name'])}</h2>
+        <p style="font-family:var(--font-heading);color:var(--crave-red);font-size:18px;font-weight:700;margin-bottom:20px;">{esc(c['short'])}</p>
         <p style="margin-bottom:14px;max-width:640px;"><strong>What happens:</strong> {esc(c['what'])}</p>
         <p style="margin-bottom:14px;max-width:640px;"><strong>What you receive:</strong> {esc(c['receive'])}</p>
         <p style="max-width:640px;"><strong>Why it matters:</strong> {esc(c['why'])}</p>
@@ -679,7 +679,7 @@ def build_brand_strategy():
       <div class="intro-text">
         <p>Brand strategy is the thinking that happens before anything gets designed: who you're for, what you're promising, and why someone should choose you over every other option they're considering.</p>
         <p>At Studio Crave, brand strategy &mdash; what some call <em>merkstrategie</em> &mdash; covers positioning, target audience, differentiation, brand personality, values, messaging and tone of voice. It's the work behind Course 01 through Course 04 of <a href="/7-course-branding-experience/">the 7 Course Branding Experience</a>.</p>
-        <h2 style="font-family:var(--font-heading);font-size:26px;margin:32px 0 16px;color:var(--midnight);">Questions this answers</h2>
+        <h2 style="font-family:var(--font-heading);font-size:26px;margin:32px 0 16px;color:var(--bordeaux-dark);font-weight:700;">Questions this answers</h2>
         <ul class="recognition-list">
           <li>Who is this brand actually for, and who is it deliberately not for?</li>
           <li>What makes this business different from the others your client is comparing?</li>
@@ -720,7 +720,7 @@ def build_visual_identity():
       <div class="intro-text">
         <p>Visual identity &mdash; logo, colour palette, typography, art direction and the graphic system that ties it together &mdash; is not decoration. It's the strategy, made visible.</p>
         <p>Every visual decision at Studio Crave is derived from the work done in <a href="/brand-strategy/">brand strategy</a> first. A colour palette isn't picked because it's trending; it's picked because it says what the brand needs to say. The same goes for the <em>huisstijl</em>, image direction and social templates that come after it.</p>
-        <h2 style="font-family:var(--font-heading);font-size:26px;margin:32px 0 16px;color:var(--midnight);">What's included</h2>
+        <h2 style="font-family:var(--font-heading);font-size:26px;margin:32px 0 16px;color:var(--bordeaux-dark);font-weight:700;">What's included</h2>
         <ul class="recognition-list">
           <li>Logo and brand marks</li>
           <li>Colour palette and typography</li>
@@ -761,7 +761,7 @@ def build_branding_photography():
       <div class="intro-text">
         <p>A brand isn't finished until it exists in a photo. Branding photography &mdash; sometimes called personal branding photography &mdash; is where strategy and visual identity get tested against a real room, real light and a real person.</p>
         <p>Studio Crave plans every shoot around the brand, not the other way around: creative direction, location, styling and a shot list built to match <a href="/visual-identity/">the visual identity</a> already agreed on.</p>
-        <h2 style="font-family:var(--font-heading);font-size:26px;margin:32px 0 16px;color:var(--midnight);">A branding shoot with Studio Crave covers</h2>
+        <h2 style="font-family:var(--font-heading);font-size:26px;margin:32px 0 16px;color:var(--bordeaux-dark);font-weight:700;">A branding shoot with Studio Crave covers</h2>
         <ul class="recognition-list">
           <li>Creative direction, tied to your brand strategy</li>
           <li>Location and styling planning</li>
@@ -802,7 +802,7 @@ def build_branding_breda():
       <div class="intro-text">
         <p>Studio Crave is based in Breda, Noord-Brabant, and works with female entrepreneurs, founders and creatives across the region &mdash; and, over video, across the Netherlands.</p>
         <p>Local clients get the full studio experience in person: strategy sessions, visual identity reviews and branding shoots around Breda and the wider Brabant area. Clients further afield get the same 7-course process, run over calls and shared boards, with shoot days scheduled when it makes sense to travel.</p>
-        <h2 style="font-family:var(--font-heading);font-size:26px;margin:32px 0 16px;color:var(--midnight);">What working with Studio Crave from Breda looks like</h2>
+        <h2 style="font-family:var(--font-heading);font-size:26px;margin:32px 0 16px;color:var(--bordeaux-dark);font-weight:700;">What working with Studio Crave from Breda looks like</h2>
         <ul class="recognition-list">
           <li>An in-person strategy session at the studio, or a local coffee shop, if you're nearby</li>
           <li>Branding photography shot on location in Breda or Brabant</li>
