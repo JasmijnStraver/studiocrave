@@ -266,7 +266,7 @@ def nav_html(current_path):
     return f"""
 <nav class="nav">
   <div class="nav-inner">
-    <a href="/" class="nav-logo">The Branding <span>Kitchen</span></a>
+    <a href="/" class="nav-logo"><img src="/images/studio-crave-logo-licht.png" alt="Studio Crave"></a>
     <ul class="nav-links" id="navLinks">
       {''.join(items)}
       <li><a href="/contact/" class="btn-nav">Plan een kennismaking</a></li>
@@ -287,8 +287,9 @@ def footer_html():
   <div class="container">
     <div class="footer-inner">
       <div>
-        <div class="footer-logo">The Branding <span>Kitchen</span>&trade;</div>
-        <p>We create cravings. Een methode van Studio Crave &mdash; branding voor vrouwelijke ondernemers die klaar zijn om te groeien, gebaseerd in {LOCALITY}.</p>
+        <div class="footer-logo"><img src="/images/sc-monogram-wit.png" alt="Studio Crave"></div>
+        <p>The Branding Kitchen&trade; &mdash; branding voor vrouwelijke ondernemers die klaar zijn om te groeien, vanuit {LOCALITY}.</p>
+        <p style="margin-top:10px;"><a href="mailto:info@studiocrave.nl">info@studiocrave.nl</a></p>
       </div>
       <div>
         <h4>Diensten</h4>
@@ -300,7 +301,7 @@ def footer_html():
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; 2026 The Branding Kitchen &mdash; een methode van Studio Crave, {LOCALITY}. Alle rechten voorbehouden.</span>
+      <span>&copy; 2026 Studio Crave &mdash; The Branding Kitchen&trade;, {LOCALITY}. Alle rechten voorbehouden.</span>
       <div style="display:flex;gap:20px;"><a href="https://instagram.com/">Instagram</a><a href="/contact/">Contact</a></div>
     </div>
   </div>
@@ -342,11 +343,11 @@ def page(path, title, description, h1, body, trail, extra_jsonld=None, og_image=
 <meta name="twitter:title" content="{esc(title)}">
 <meta name="twitter:description" content="{esc(description)}">
 <meta name="twitter:image" content="{og_image_url}">
-<link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/images/sc-monogram-relief.png" type="image/png">
 <link rel="stylesheet" href="/css/tbk.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 {ld_html}
 </head>
 <body>
@@ -446,10 +447,7 @@ def build_home():
             <a href="#quiz" class="btn-primary">Ontdek je Signature Dish</a>
             <a href="#menu" class="btn-outline-light">Bekijk het menu</a>
           </div>
-          <p style="margin-top:12px;font-size:14px;color:rgba(247,240,236,0.6);max-width:36em;">Voor coaches, consultants, therapeuten en creatieve ondernemers die al klanten hebben, maar wier merk niet meer laat zien wie ze zijn.</p>
-        </div>
-        <div class="hero-image">
-          <img src="/images/jasmijn1.svg" alt="Jasmijn Straver, chef van The Branding Kitchen" width="900" height="1100" loading="eager">
+          <p style="margin-top:12px;font-size:14px;color:rgba(245,240,235,0.65);max-width:36em;">Voor coaches, consultants, therapeuten en creatieve ondernemers die al klanten hebben, maar wier merk niet meer laat zien wie ze zijn.</p>
         </div>
       </div>
     </div>
@@ -490,6 +488,12 @@ def build_home():
       <p style="color:rgba(247,240,236,0.75);font-size:17px;">Zeven gangen, in deze volgorde. Een chef begint niet bij het dessert.</p>
     </div>
     {course_cards_html()}
+    <div class="dessert-card">
+      <span class="accent-label">Het dessert</span>
+      <h3>De Signature Dish</h3>
+      <p>Na de zeven gangen volgt het dessert: jouw Signature Dish. De quiz die laat zien welk brand-archetype je bent &mdash; en het startpunt van elk traject hierna.</p>
+      <p style="margin-top:18px;"><a href="#quiz" class="btn-primary">Doe de Signature Dish Quiz</a></p>
+    </div>
     <p style="text-align:center;margin-top:36px;"><a href="/7-course-branding-experience/" class="btn-outline-light">Bekijk alle 7 gangen</a></p>
   </div>
 </section>
@@ -561,7 +565,7 @@ def build_home():
         <span class="section-label">Over Jasmijn</span>
         <h2 class="section-title section-title-dark">De chef achter de keuken.</h2>
         <p>Ik ben Jasmijn Straver: creative director, merkstrateeg en fotograaf. Bij mij zitten de strategie en de camera in dezelfde keuken, waardoor het beeld altijd klopt met het verhaal.</p>
-        <blockquote style="font-family:var(--font-heading);font-size:22px;font-weight:700;color:var(--bordeaux);border-left:3px solid var(--crave-red);padding-left:20px;margin:20px 0;">Content gaat nooit alleen over wat zichtbaar is. Het gaat over wat voelbaar wordt.</blockquote>
+        <blockquote style="font-family:var(--font-heading);font-size:22px;font-weight:700;color:var(--burgundy);border-left:3px solid var(--pepper);padding-left:20px;margin:20px 0;">Content gaat nooit alleen over wat zichtbaar is. Het gaat over wat voelbaar wordt.</blockquote>
         <a href="/about/" class="btn-outline-dark">Lees het hele verhaal</a>
       </div>
     </div>
@@ -573,7 +577,7 @@ def build_home():
     <h2 class="section-title section-title-light" style="max-width:16em;margin-bottom:40px;">Niet elke gast hoort aan deze tafel.</h2>
     <div class="intro-grid">
       <div>
-        <h3 style="font-family:var(--font-heading);font-size:18px;font-weight:700;color:var(--crave-red);margin-bottom:14px;">Wel voor jou als je</h3>
+        <h3 style="font-family:var(--font-heading);font-size:18px;font-weight:700;color:var(--pepper);margin-bottom:14px;">Wel voor jou als je</h3>
         <ul class="recognition-list">
           <li>al minimaal een jaar onderneemt en klanten hebt</li>
           <li>voelt dat je merk achterloopt op wie je nu bent</li>
@@ -582,7 +586,7 @@ def build_home():
         </ul>
       </div>
       <div>
-        <h3 style="font-family:var(--font-heading);font-size:18px;font-weight:700;color:var(--crave-red);margin-bottom:14px;">Niet voor jou als je</h3>
+        <h3 style="font-family:var(--font-heading);font-size:18px;font-weight:700;color:var(--pepper);margin-bottom:14px;">Niet voor jou als je</h3>
         <ul class="recognition-list">
           <li>alleen even snel een logo zoekt</li>
           <li>nog aan het ontdekken bent wat je wilt aanbieden</li>
@@ -610,6 +614,7 @@ def build_home():
       <a href="/contact/" class="btn-primary">Plan een kennismaking</a>
       <a href="#quiz" class="btn-outline-light">Eerst de quiz</a>
     </div>
+    <span class="cta-tagline">Ready to create some cravings?</span>
   </div>
 </section>
 """
@@ -688,8 +693,8 @@ def build_seven_courses():
     <div class="course-detail">
       <div class="course-detail-number">{c['n']}</div>
       <div>
-        <h2 class="{title_cls}" style="font-size:clamp(28px,3.4vw,42px);font-weight:800;margin-bottom:10px;">{esc(c['name'])}</h2>
-        <p style="color:var(--crave-red);font-size:18px;font-weight:700;margin-bottom:20px;">{esc(c['short'])}</p>
+        <h2 class="{title_cls}" style="font-size:clamp(28px,3.4vw,42px);font-weight:600;margin-bottom:10px;">{esc(c['name'])}</h2>
+        <p style="color:var(--pepper);font-size:18px;font-weight:700;margin-bottom:20px;">{esc(c['short'])}</p>
         <p style="margin-bottom:14px;max-width:640px;"><strong>Wat er gebeurt:</strong> {esc(c['what'])}</p>
         <p style="margin-bottom:14px;max-width:640px;"><strong>Wat je krijgt:</strong> {esc(c['receive'])}</p>
         <p style="max-width:640px;"><strong>Waarom het telt:</strong> {esc(c['why'])}</p>
@@ -796,7 +801,7 @@ def build_brand_strategy():
       <div class="intro-text">
         <p>Merkstrategie is het denkwerk dat gebeurt v&oacute;&oacute;rdat er iets ontworpen wordt: voor wie je bent, wat je belooft, en waarom iemand jou zou kiezen boven elke andere optie.</p>
         <p>Bij Studio Crave omvat merkstrategie positionering, doelgroep, onderscheidend vermogen, merkpersoonlijkheid, waarden, boodschap en tone of voice. Het is het werk achter Gang 01 t/m 04 van <a href="/7-course-branding-experience/">de 7-Course Branding Experience</a>.</p>
-        <h2 style="font-size:26px;margin:32px 0 16px;color:var(--bordeaux-dark);font-weight:700;">Vragen die dit beantwoordt</h2>
+        <h2 style="font-size:26px;margin:32px 0 16px;color:var(--midnight);font-weight:700;">Vragen die dit beantwoordt</h2>
         <ul class="recognition-list">
           <li>Voor wie is dit merk eigenlijk, en voor wie bewust niet?</li>
           <li>Wat maakt deze business anders dan de opties waar je klant tussen kiest?</li>
@@ -837,7 +842,7 @@ def build_visual_identity():
       <div class="intro-text">
         <p>Visuele identiteit &mdash; logo, kleurenpalet, typografie, art direction en het grafische systeem dat alles samenbrengt &mdash; is geen decoratie. Het is de strategie, zichtbaar gemaakt.</p>
         <p>Elke visuele keuze bij Studio Crave komt voort uit het werk dat eerst in <a href="/brand-strategy/">brand strategie</a> is gedaan. Een kleurenpalet wordt niet gekozen omdat het trending is; het wordt gekozen omdat het zegt wat het merk moet zeggen. Hetzelfde geldt voor de huisstijl, beeldtaal en social templates die daarna volgen.</p>
-        <h2 style="font-size:26px;margin:32px 0 16px;color:var(--bordeaux-dark);font-weight:700;">Wat erbij hoort</h2>
+        <h2 style="font-size:26px;margin:32px 0 16px;color:var(--midnight);font-weight:700;">Wat erbij hoort</h2>
         <ul class="recognition-list">
           <li>Logo en merktekens</li>
           <li>Kleurenpalet en typografie</li>
@@ -878,7 +883,7 @@ def build_branding_photography():
       <div class="intro-text">
         <p>Een merk is niet af voordat het in een foto bestaat. Branding fotografie &mdash; soms personal branding fotografie genoemd &mdash; is waar strategie en visuele identiteit getoetst worden aan een echte ruimte, echt licht en een echt persoon.</p>
         <p>Studio Crave plant elke shoot rond het merk, niet andersom: creative direction, locatie, styling en een shotlist die aansluit op <a href="/visual-identity/">de visuele identiteit</a> die al is vastgesteld.</p>
-        <h2 style="font-size:26px;margin:32px 0 16px;color:var(--bordeaux-dark);font-weight:700;">Een branding shoot met Studio Crave omvat</h2>
+        <h2 style="font-size:26px;margin:32px 0 16px;color:var(--midnight);font-weight:700;">Een branding shoot met Studio Crave omvat</h2>
         <ul class="recognition-list">
           <li>Creative direction, gekoppeld aan je merkstrategie</li>
           <li>Locatie- en stylingplanning</li>
@@ -919,7 +924,7 @@ def build_branding_breda():
       <div class="intro-text">
         <p>Studio Crave is gevestigd in Breda, Noord-Brabant, en werkt met vrouwelijke ondernemers, founders en creatieven uit de regio &mdash; en, via video, door heel Nederland.</p>
         <p>Lokale klanten krijgen de volledige studio-ervaring in persoon: strategiesessies, reviews van de visuele identiteit en branding shoots in en rond Breda. Klanten verderop krijgen hetzelfde 7-gangen-proces, via calls en gedeelde boards, met shootdagen ingepland wanneer reizen zinvol is.</p>
-        <h2 style="font-size:26px;margin:32px 0 16px;color:var(--bordeaux-dark);font-weight:700;">Zo ziet werken met Studio Crave vanuit Breda eruit</h2>
+        <h2 style="font-size:26px;margin:32px 0 16px;color:var(--midnight);font-weight:700;">Zo ziet werken met Studio Crave vanuit Breda eruit</h2>
         <ul class="recognition-list">
           <li>Een strategiesessie op locatie in de studio, of een koffietentje in de buurt</li>
           <li>Branding fotografie op locatie in Breda of Brabant</li>
@@ -928,7 +933,7 @@ def build_branding_breda():
         </ul>
         <p style="margin-top:20px;">Waarom merkstrategie hier telt, is dezelfde reden waarom het overal telt: een groeiende business in een compacte, competitieve stad als Breda heeft een merk nodig dat meteen duidelijk is, niet eentje dat twee keer uitgelegd moet worden.</p>
       </div>
-      <div class="intro-image"><img src="/images/jasmijn1.svg" alt="Studio Crave, branding studio in Breda" width="900" height="1100" loading="lazy"></div>
+      <div class="intro-image"><img src="/images/jasmijn2.svg" alt="Studio Crave, branding studio in Breda" width="900" height="1100" loading="lazy"></div>
     </div>
     <p style="text-align:center;margin-top:40px;"><a href="/contact/" class="btn-primary">Werk met Studio Crave</a></p>
   </div>
@@ -1034,7 +1039,7 @@ def build_about():
         <p>Ik ben Jasmijn Straver: creative director, merkstrateeg en fotograaf. Mijn achtergrond loopt van marketing en communicatie via events en NLP naar fotografie. De rode draad was altijd dezelfde: creativiteit als manier om te voelen, te verbinden en impact te maken.</p>
         <p>Die draad liep via Selfcare Studio en Bold Visuals naar Studio Crave, mijn creative studio. The Branding Kitchen is de methode die daaruit ontstond: alles wat ik weet over merken, in zeven gangen.</p>
         <p>De meeste branding-trajecten sturen je voor de foto's door naar iemand anders. Bij mij zitten de strategie en de camera in dezelfde keuken. Daardoor klopt het beeld met het verhaal.</p>
-        <blockquote style="font-family:var(--font-heading);font-size:22px;font-weight:700;color:var(--bordeaux);border-left:3px solid var(--crave-red);padding-left:20px;margin:20px 0;">Content gaat nooit alleen over wat zichtbaar is. Het gaat over wat voelbaar wordt.</blockquote>
+        <blockquote style="font-family:var(--font-heading);font-size:22px;font-weight:700;color:var(--burgundy);border-left:3px solid var(--pepper);padding-left:20px;margin:20px 0;">Content gaat nooit alleen over wat zichtbaar is. Het gaat over wat voelbaar wordt.</blockquote>
       </div>
     </div>
   </div>
