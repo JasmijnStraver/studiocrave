@@ -28,51 +28,65 @@ COURSES = [
     {
         "n": "01", "roman": "I", "slug": "raw-ingredients", "name": "Raw Ingredients",
         "short": "Wie ben je echt en wat breng je mee? Je energie, je verhaal, je expertise en je rafelrandjes.",
+        "menu_desc": "Wie je echt bent: verhaal, energie, expertise, rafelrandjes",
         "what": "We brengen in kaart wie je bent, wat je al weet, en wat je meeneemt uit alles wat je al hebt opgebouwd — voordat er iets veranderd wordt.",
         "receive": "Een helder beeld van je ruwe ingrediënten: je sterktes, je verhaal, en de gaten die het echt waard zijn om te dichten.",
         "why": "De meeste rebrands gaan hier al mis. Je kunt geen sterk merk bouwen op ingrediënten waar nog niemand goed naar heeft gekeken.",
+        "status": "done",
     },
     {
         "n": "02", "roman": "II", "slug": "flavor-profile", "name": "Flavor Profile",
         "short": "De smaak van je merk: tone of voice, energie en vibe. Wat maakt jou herkenbaar na één zin?",
+        "menu_desc": "Tone of voice, energie en vibe",
         "what": "We bepalen hoe je merk klinkt en voelt — de woorden, de toon en de energie die overal terugkomen.",
         "receive": "Een tone-of-voice-gids: hoe je wel schrijft, hoe je nooit schrijft, en de taal die onmiskenbaar van jou is.",
         "why": "Zonder uitgesproken smaak ben je gewoon... correct. En correct wordt niet onthouden.",
+        "status": "active",
     },
     {
         "n": "03", "roman": "III", "slug": "signature-sauce", "name": "Signature Sauce",
         "short": "Jouw methode, visie en frameworks. Het ding waar mensen voor terugkomen.",
+        "menu_desc": "Jouw unieke methode, visie en frameworks",
         "what": "We halen eruit wat jij anders doet dan ieder ander, en zetten dat om in taal en een framework dat klanten herkennen.",
         "receive": "Jouw signature positioneringszin, plus de bewijsstukken die hem onderbouwen.",
         "why": "Dit is waar klanten voor terugkomen, en wat ze doorvertellen als ze je aanbevelen.",
+        "status": "open",
     },
     {
         "n": "04", "roman": "IV", "slug": "positioning-cut", "name": "Positioning Cut",
         "short": "Waar snijd je jezelf los van de massa? Je niche, je claims en je grenzen.",
+        "menu_desc": "Niche, claims en grenzen + voorbereiding brand shoot",
         "what": "We beslissen wat je merk niet is — welke doelgroep, diensten en taal je bewust achterlaat.",
         "receive": "Een scherpe positionering: je niche, je claim, en de grenzen die hem helder houden.",
         "why": "Een merk dat iedereen wil bedienen, wordt door niemand gekozen. Snijden is wat de rest van het menu logisch maakt.",
+        "status": "open",
     },
     {
         "n": "05", "roman": "V", "slug": "plating", "name": "Plating",
         "short": "Hoe je jezelf serveert: je brand shoot, je contentformats, je hooks en je verhalen.",
+        "menu_desc": "Content formats, hooks en storytelling + brand shoot",
         "what": "Logo, kleur, typografie en art direction — gebouwd vanuit de strategie, niet ervoor.",
         "receive": "Een complete visuele identiteit: je merktekens, kleurenpalet, typografie en gebruiksrichtlijnen.",
         "why": "Plating is presentatie, geen decoratie. Het is het eerste dat mensen zien, en het moet meteen het juiste zeggen.",
+        "status": "open",
     },
     {
         "n": "06", "roman": "VI", "slug": "pairing", "name": "Pairing",
         "short": "Klopt alles samen? Je aanbod, je prijs en je klantreis passen bij het merk dat je neerzet.",
+        "menu_desc": "Aanbod, prijs en klantreis",
         "what": "We checken of je prijs, je aanbod en de ervaring van je klant allemaal hetzelfde zeggen als je nieuwe merk.",
         "receive": "Een aanbod en klantreis die kloppen met het merk dat je net hebt neergezet.",
         "why": "Een premium merk met een budget-aanbod verwart mensen. Pairing is waar merk en business elkaar ontmoeten.",
+        "status": "open",
     },
     {
         "n": "07", "roman": "VII", "slug": "the-experience", "name": "The Experience",
         "short": "Hoe voelt het om met jou te werken? Beleving, energie en exclusiviteit, van eerste DM tot testimonial.",
+        "menu_desc": "Hoe samenwerken met jou voelt",
         "what": "Brand fotografie, launch-content en de kleine details die het werken met jou onvergetelijk maken.",
         "receive": "Launch-klare content, een richting voor je brand fotografie, en een plan om het nieuwe merk de wereld in te brengen.",
         "why": "Mensen onthouden nooit alleen de smaak... ze onthouden hoe jij ze liet voelen.",
+        "status": "open",
     },
 ]
 
@@ -133,31 +147,44 @@ PORTFOLIO = [
 
 MENU_ITEMS = [
     {
-        "name": "Signature Dish Quiz", "price": "Gratis", "href": "#quiz", "cta": "Doe de quiz",
-        "desc": "Zes vragen, drie minuten. Je ontdekt welk van de vier brand-archetypes je bent en welke gang in je merk nu het zwakst is.",
-    },
-    {
-        "name": "The Plating Playbook", "price": "€17", "href": "/contact/", "cta": "Bekijk de Playbook",
-        "desc": "Een Canva-kit voor je feed: feed-, story- en highlight-templates voor alle vier archetypes, plus een korte gids met mijn plating-principes. Zelf doen, in één middag.",
-    },
-    {
-        "name": "The 7-Course Brand Audit", "price": "€77", "href": "/contact/", "cta": "Bekijk de Audit",
+        "name": "Brand Audit", "price": "€77", "href": "/contact/", "cta": "Bekijk de Audit",
         "desc": "Een mini-cursus in zeven modules, één per gang, plus een persoonlijke Loom van twintig minuten waarin ik jouw merk doorlicht en een richting voorstel. Maximaal vijftien per week, omdat ik ze zelf maak.",
+    },
+    {
+        "name": "Craveable Identity", "price": "€395", "href": "/contact/", "cta": "Bekijk Craveable Identity",
+        "desc": "Jouw visuele identiteit: logo, kleurenpalet, typografie en gebruiksrichtlijnen, gebouwd op wat je al hebt in plaats van vanaf nul.",
+    },
+    {
+        "name": "Branded Templates", "price": "€450", "href": "/contact/", "cta": "Bekijk de templates",
+        "desc": "Een complete templateset voor content, voorstellen en documenten in jouw huisstijl. Zelf doorkoken, zonder ooit los van je merk te raken.",
+    },
+    {
+        "name": "Be Your Own Chef", "price": "€25 / maand", "href": "/contact/", "cta": "Meer over Be Your Own Chef",
+        "desc": "Doorlopende toegang tot de Branding Dashboard: jouw merk, je documenten en de skills die je elke week helpen zelf door te koken.",
     },
 ]
 
 BRAND_EXPERIENCE = {
-    "name": "The Brand Experience", "price": "€1.500",
-    "desc": "Het volledige menu in acht weken, done-with-you. Vier gangen werken we samen uit, drie kook je door met mijn templates. Inclusief je eigen shootdag, positionering, stem, visuele identiteit en een launchplan.",
-    "note": "Launchprijs voor de eerste tien gasten. Daarna €2.500.",
+    "name": "7-Course Brand Experience", "price": "€2.500",
+    "desc": "Het volledige menu, done-with-you: alle zeven gangen van positionering tot launch, inclusief je eigen shootdag, stem, visuele identiteit en een launchplan.",
+    "note": "Het complete traject van The Branding Kitchen™, in deze volgorde.",
 }
+
+ADDONS = [
+    ("Kick Off Shoot", "€347", "Een korte brand shoot om je nieuwe merk mee te lanceren."),
+    ("Full Shoot Day", "€847", "Een volledige shootdag: genoeg beeldmateriaal voor maanden aan content."),
+    ("Andere shoots en campagnes", "Op aanvraag", "Van productshoots tot campagnes op maat."),
+    ("Losse gang bijboeken", "In overleg", "Eén specifieke gang opnieuw of extra, los van een volledig traject."),
+    ("Website op maat", "In overleg", "Een website die klopt met de identiteit die we samen hebben gebouwd."),
+    ("Iets anders", "In overleg", "Past je vraag niet in het menu? Vertel me waar je naar zoekt."),
+]
 
 FAQ = [
     ("Waar begin ik?", "Met de gratis Signature Dish Quiz. Daarna weet je welk archetype je bent en welke gang de meeste aandacht vraagt. Wil je direct verder, plan dan een kennismaking van 15 minuten."),
-    ("Zit de shoot bij The Brand Experience inbegrepen?", "Ja. Je krijgt een eigen shootdag. Omdat ik zowel de strategie als de fotografie doe, sluiten je beelden direct aan op je positionering."),
-    ("Hoe lang duurt een traject?", "The Brand Experience duurt acht weken. De Audit doe je in één middag; je persoonlijke Loom ontvang je binnen 48 uur nadat je je antwoorden hebt ingestuurd."),
-    ("Krijg ik ook templates om zelf mee verder te werken?", "Ja. Na het traject kook je zelf door met templates in jouw huisstijl, zodat je merk na de launch niet verwatert."),
-    ("Wat is het verschil tussen Studio Crave en The Branding Kitchen?", "Studio Crave is mijn creative studio voor visuele identiteit, brand visuals en content. The Branding Kitchen is de methode: het complete merktraject in zeven gangen."),
+    ("Zit de shoot bij de 7-Course Brand Experience inbegrepen?", "Ja. Je krijgt een eigen shootdag. Omdat ik zowel de strategie als de fotografie doe, sluiten je beelden direct aan op je positionering."),
+    ("Hoe lang duurt een traject?", "De 7-Course Brand Experience duurt acht weken. De Audit doe je in één middag; je persoonlijke Loom ontvang je binnen 48 uur nadat je je antwoorden hebt ingestuurd."),
+    ("Krijg ik ook templates om zelf mee verder te werken?", "Ja. Via Branded Templates en Be Your Own Chef kook je zelf door in jouw huisstijl, zodat je merk na de launch niet verwatert."),
+    ("Wat is het verschil tussen Studio Crave en The Branding Kitchen?", "Studio Crave is mijn creative studio voor visuele identiteit, brand visuals en content. The Branding Kitchen™ is de methode: het complete merktraject in zeven gangen."),
 ]
 
 ARCHETYPES = [
@@ -407,6 +434,53 @@ def menu_items_html():
     return '<div class="menu-list">' + "".join(rows) + '</div>'
 
 
+def addons_html():
+    rows = []
+    for name, price, desc in ADDONS:
+        rows.append(f"""
+      <div class="addon-item">
+        <div class="addon-item-head">
+          <h4>{esc(name)}</h4>
+          <span class="addon-price">{esc(price)}</span>
+        </div>
+        <p>{esc(desc)}</p>
+      </div>""")
+    return '<div class="addon-grid">' + "".join(rows) + '</div>'
+
+
+STATUS_LABEL = {"done": "Afgerond", "active": "Bezig", "open": "Open"}
+
+
+def progress_menu_html():
+    served = sum(1 for c in COURSES if c["status"] == "done")
+    rows = []
+    for c in COURSES:
+        status = c["status"]
+        label = STATUS_LABEL[status]
+        mark = "&check;" if status == "done" else c["n"]
+        rows.append(f"""
+      <div class="progress-item progress-{status}">
+        <div class="progress-number">{mark}</div>
+        <div class="progress-body">
+          <div class="progress-name">{esc(c['name'])}</div>
+          <div class="progress-desc">{esc(c['menu_desc'])}</div>
+        </div>
+        <span class="progress-status progress-status-{status}">{label}</span>
+      </div>""")
+    return f"""
+    <div class="progress-menu">
+      <div class="progress-menu-header">
+        <div>
+          <span class="accent-label">Volgens The Branding Kitchen&trade;</span>
+          <h3>7-Course Brand Experience</h3>
+        </div>
+        <span class="progress-fraction">{served} van 7 gangen geserveerd</span>
+      </div>
+      <div class="progress-list">{"".join(rows)}</div>
+      <p class="progress-footer">Signature Dish: wordt geserveerd na je laatste gang.</p>
+    </div>"""
+
+
 def faq_html():
     items = []
     for q, a in FAQ:
@@ -509,7 +583,18 @@ def build_home():
   </div>
 </section>
 
-<section class="section-light" style="padding-top:0;" id="menu">
+<section class="section-dark" id="extra-gangen">
+  <div class="container">
+    <div style="text-align:center;max-width:640px;margin:0 auto 40px;">
+      <span class="section-label">Extra gangen</span>
+      <h2 class="section-title section-title-light">À la carte, los bij te boeken.</h2>
+      <p style="color:rgba(245,240,235,0.7);font-size:16px;">Naast je pakket, of los ernaast.</p>
+    </div>
+    {addons_html()}
+  </div>
+</section>
+
+<section class="section-light" id="menu">
   <div class="container">
     <div style="text-align:center;margin-bottom:48px;">
       <span class="section-label">Signature Dishes</span>
@@ -666,6 +751,17 @@ def build_branding_kitchen():
   <div class="container">
     {course_cards_html()}
     <p style="text-align:center;margin-top:36px;"><a href="/7-course-branding-experience/" class="btn-primary">Plan een kennismaking</a></p>
+  </div>
+</section>
+
+<section class="section-dark">
+  <div class="container">
+    <div style="text-align:center;max-width:640px;margin:0 auto 40px;">
+      <span class="section-label">Samenwerken</span>
+      <h2 class="section-title section-title-light">Zo volg je je voortgang in de Branding Dashboard.</h2>
+      <p style="color:rgba(245,240,235,0.7);font-size:16px;">Elke klant ziet dit bovenaan Samenwerken, onder &ldquo;Wat je al hebt&rdquo;. Dit is een voorbeeld.</p>
+    </div>
+    {progress_menu_html()}
   </div>
 </section>
 """
