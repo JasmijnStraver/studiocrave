@@ -180,11 +180,17 @@ ADDONS = [
 ]
 
 FAQ = [
-    ("Waar begin ik?", "Met de gratis Signature Dish Quiz. Daarna weet je welk archetype je bent en welke gang de meeste aandacht vraagt. Wil je direct verder, plan dan een kennismaking van 15 minuten."),
-    ("Zit de shoot bij de 7-Course Brand Experience inbegrepen?", "Ja. Je krijgt een eigen shootdag. Omdat ik zowel de strategie als de fotografie doe, sluiten je beelden direct aan op je positionering."),
-    ("Hoe lang duurt een traject?", "De 7-Course Brand Experience duurt acht weken. De Audit doe je in één middag; je persoonlijke Loom ontvang je binnen 48 uur nadat je je antwoorden hebt ingestuurd."),
-    ("Krijg ik ook templates om zelf mee verder te werken?", "Ja. Via Branded Templates en Be Your Own Chef kook je zelf door in jouw huisstijl, zodat je merk na de launch niet verwatert."),
-    ("Wat is het verschil tussen Studio Crave en The Branding Kitchen?", "Studio Crave is mijn creative studio voor visuele identiteit, brand visuals en content. The Branding Kitchen™ is de methode: het complete merktraject in zeven gangen."),
+    ("Voor wie is Studio Crave?", "Voor coaches, consultants en andere ondernemers die goed zijn in hun vak, maar online nog niet laten zien wie ze zijn. Je hebt klanten, je hebt een verhaal, en je bent klaar om op te vallen."),
+    ("Wat is het verschil tussen de 7-Course en losse onderdelen?", "Losse onderdelen geven je een sterk stuk: een identiteit, templates of een shoot. De 7-Course geeft je een merk waarin alles op elkaar aansluit, van je verhaal tot je beelden en je aanbod. Daarom raad ik bijna altijd het hele menu aan."),
+    ("Ik heb al een logo of kleuren. Betaal ik daar dubbel voor?", "Nee. Heb je een onderdeel al, dan vullen we die gang met uitbreidend werk van gelijke waarde, zoals een extra templateset of een uitgebreid moodboard."),
+    ("Hoeveel tijd kost het mij?", "Gemiddeld een paar uur per gang: de onboarding invullen, aanleveren wat je hebt, met de tools aan de slag en feedback geven. De shoot plannen we samen, op een moment dat bij je past."),
+    ("Hoe lang duurt de 7-Course?", "Drie maanden. De gang met je brand shoot en templates duurt soms wat langer, omdat het plannen van de shoot en het bewerken tijd kosten."),
+    ("Heb ik professionele foto's nodig voor Branded Templates?", "Ja. Templates werken alleen met beelden die net zo goed zijn als je merk. Heb je ze nog niet? Combineer je templates met een Kick Off shoot of Full Shoot Day, met €50 korting."),
+    ("Waar vindt de shoot plaats?", "Op een buitenlocatie die bij je verhaal past, gratis. Liever een studio of een andere ruimte? Dat kan, voor eigen kosten. Reiskosten komen erbij."),
+    ("Hoe vaak spreken we elkaar?", "In de 7-Course drie keer persoonlijk: bij de start, halverwege en bij de afronding. Daartussen stel je je vraag in je portaal, of app of mail je me."),
+    ("Wat gebeurt er na mijn traject?", "Je portaal blijft nog een tijd open: 3 maanden na de 7-Course, 1 maand na Branded Templates of Craveable Identity, en 4 weken na een Brand Audit. Je Signature Dish en je documenten blijven altijd van jou. Wil je langer met je tools en sous-chef werken? Laat het me weten, dan regel ik het."),
+    ("Zijn de tools in het portaal AI?", "Ja, de tools en de sous-chef werken met Claude. Het verschil met een losse chatbot: ze kennen jouw merk. Je toon, je doelgroep, je verhaal en je methode gaan altijd mee. Daarom klinkt wat eruit komt als jou, niet als iedereen."),
+    ("Wat gebeurt er met mijn gegevens?", "Je gegevens staan veilig opgeslagen in de EU, en alleen jij en ik zien ze. Wil je dat ik alles verwijder? Dan regel ik dat persoonlijk."),
 ]
 
 ARCHETYPES = [
@@ -580,14 +586,12 @@ def build_home():
     <div class="container">
       <div class="hero-split">
         <div class="hero-inner" style="text-align:left;">
-          <span class="hero-eyebrow">Branding als fine dining</span>
-          <h1>Een merk is geen plaatje. <em>Het is een menu.</em></h1>
-          <p class="hero-sub">Ik bouw merken in zeven gangen: van wie je echt bent tot hoe het voelt om met je te werken. Positionering, stem, beeld en shoot in &eacute;&eacute;n keuken, zodat alles hetzelfde verhaal vertelt.</p>
+          <h1>Ready to create <em>some cravings?</em></h1>
+          <p class="hero-sub">Ik maak geen logo's. Ik serveer merken waar mensen naar verlangen.</p>
           <div class="hero-actions" style="justify-content:flex-start;">
-            <a href="#quiz" class="btn-primary">Ontdek je Signature Dish</a>
-            <a href="#menu" class="btn-outline-light">Bekijk het menu</a>
+            <a href="#menu-prijzen" class="btn-primary">Bekijk het menu</a>
+            <a href="#quiz" class="btn-outline-light">Doe de quiz: welk gerecht ben jij?</a>
           </div>
-          <p style="margin-top:12px;font-size:14px;color:rgba(245,240,235,0.65);max-width:36em;">Voor coaches, consultants, therapeuten en creatieve ondernemers die al klanten hebben, maar wier merk niet meer laat zien wie ze zijn.</p>
         </div>
       </div>
     </div>
@@ -607,16 +611,59 @@ def build_home():
   <div class="container">
     <div class="intro-grid">
       <div class="intro-text">
-        <span class="section-label">Het probleem</span>
-        <h2 class="section-title section-title-dark">Je hebt geen nieuw logo nodig. Je merk mist smaak.</h2>
-        <p><strong>Je bent gegroeid. Je merk niet.</strong> Je bio, je beelden en je aanbod komen uit een eerdere versie van je business. Je herkent jezelf er niet meer in, en je droomklant ook niet.</p>
-        <p><strong>Mensen snappen het pas als je het uitlegt.</strong> Elke kennismaking begint met jou die vertelt wat je eigenlijk doet. Een sterk merk doet dat werk voordat je in gesprek gaat.</p>
-        <p><strong>Je wilt premium vragen, maar je merk ondersteunt het nog niet.</strong> Je werk is het waard. Alleen ziet je merk eruit als iets dat je in een supermarktschap vindt. Dan gaat het gesprek over prijs in plaats van over waarde.</p>
+        <span class="section-label">Intro</span>
+        <h2 class="section-title section-title-dark">Fastfood-branding is overal.</h2>
+        <p>Je bent goed in wat je doet. Je klanten weten het. Maar online zie je eruit als iedereen. Dezelfde templates, dezelfde zinnen, dezelfde stockfoto's. Fastfood-branding.</p>
+        <p>Bij Studio Crave krijgt je merk een eigen smaak. Een verhaal dat klopt, beelden die blijven hangen, en een stem die meteen als jou klinkt. Zodat de juiste mensen niet alleen kijken, maar blijven.</p>
       </div>
       <div class="intro-image">
         <img src="/images/jasmijn6.svg" alt="The Branding Kitchen, signature details" width="900" height="900" loading="lazy">
       </div>
     </div>
+  </div>
+</section>
+
+<section class="section-dark">
+  <div class="container">
+    <span class="section-label">Waar we voor staan</span>
+    <ul class="recognition-list" style="max-width:720px;margin-top:20px;">
+      <li><strong style="font-family:var(--font-heading);color:var(--gold);">Aandacht.</strong> Beeld dat de duim stopt in een tijdlijn vol ruis.</li>
+      <li><strong style="font-family:var(--font-heading);color:var(--gold);">Emotie.</strong> Een sfeer die je merk een smaak geeft, geen stijl van de plank.</li>
+      <li><strong style="font-family:var(--font-heading);color:var(--gold);">Onvergetelijk.</strong> Een merkervaring die terugkomt in iemands hoofd, lang na de eerste blik.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section-light">
+  <div class="container">
+    <div style="text-align:center;max-width:620px;margin:0 auto 40px;">
+      <span class="section-label">Drie ingangen</span>
+      <h2 class="section-title section-title-dark">Kies hoe je aan tafel komt.</h2>
+    </div>
+    <div class="pillar-grid" style="grid-template-columns:repeat(3,1fr);">
+      <div class="pillar-card">
+        <h3><a href="/7-course-branding-experience/" style="color:inherit;text-decoration:none;">De 7-Course Brand Experience</a></h3>
+        <p>Drie maanden samen aan tafel. Je hele merk, van verhaal tot beleving, met brand shoot, ruim 100 templates en je Craveable Identity.</p>
+        <p style="margin-top:14px;"><a href="/7-course-branding-experience/" style="font-weight:700;font-size:14px;color:var(--pepper);text-decoration:none;">Proef het menu &rarr;</a></p>
+      </div>
+      <div class="pillar-card">
+        <h3><a href="/branding/" style="color:inherit;text-decoration:none;">Shoots &amp; Designs</a></h3>
+        <p>Een brand shoot, een Craveable Identity of Branded Templates. Een sterk stuk van je merk, los geserveerd.</p>
+        <p style="margin-top:14px;"><a href="/branding/" style="font-weight:700;font-size:14px;color:var(--pepper);text-decoration:none;">Bekijk het werk &rarr;</a></p>
+      </div>
+      <div class="pillar-card">
+        <h3><a href="/contact/" style="color:inherit;text-decoration:none;">Brand Audit &middot; &euro;77</a></h3>
+        <p>Twijfel je waar je merk nu staat? Ik proef je merk zoals het is, en vertel je precies waar de smaak zit.</p>
+        <p style="margin-top:14px;"><a href="/contact/" style="font-weight:700;font-size:14px;color:var(--pepper);text-decoration:none;">Start met een audit &rarr;</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-dark">
+  <div class="container" style="text-align:center;max-width:640px;margin:0 auto;">
+    <span class="section-label">Twee namen, &eacute;&eacute;n keuken</span>
+    <p style="color:rgba(247,240,236,0.85);font-size:17px;">Studio Crave is mijn studio. The Branding Kitchen&trade; is hoe ik kook: zeven gangen, van je rauwe ingredi&euml;nten tot een beleving waar mensen voor terugkomen.</p>
   </div>
 </section>
 
@@ -754,21 +801,19 @@ def build_home():
 
 <section class="cta-section" id="contact">
   <div class="cta-content">
-    <h2>Klaar om <em>aan tafel</em> te gaan?</h2>
-    <p>Plan een kennismaking van 15 minuten. Geen pitch: we kijken samen of jouw merk klaar is voor het hele menu.</p>
+    <h2>Geen losse plaatjes.<br>Een merk dat niet meer te negeren is.</h2>
     <div class="hero-actions">
       <a href="/contact/" class="btn-primary">Plan een kennismaking</a>
       <a href="#quiz" class="btn-outline-light">Eerst de quiz</a>
     </div>
-    <span class="cta-tagline">Ready to create some cravings?</span>
   </div>
 </section>
 """
     page(
         "/",
-        "Branding Studio Breda | The Branding Kitchen — Studio Crave",
-        "The Branding Kitchen (Studio Crave) is een branding studio in Breda voor vrouwelijke ondernemers. Positionering, merkstrategie, visuele identiteit en branding fotografie in zeven gangen.",
-        "Een merk is geen plaatje. Het is een menu.",
+        "Branding Studio Breda | Studio Crave — The Branding Kitchen™",
+        "Studio Crave is een branding studio in Breda. Ik maak geen logo's, ik serveer merken waar mensen naar verlangen: via de 7-Course Brand Experience, losse Shoots & Designs, of een Brand Audit.",
+        "Ready to create some cravings?",
         body,
         trail=[("Home", "/")],
         extra_jsonld=[service_jsonld("Branding", "Merkstrategie, visuele identiteit, branding fotografie en brand launch voor vrouwelijke ondernemers.", "/")],
