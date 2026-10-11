@@ -192,11 +192,11 @@ SERVICE_LINKS = [
 
 NAV_LINKS = [
     ("Studio Crave", "/"),
-    ("7-Course Brand Experience", "/7-course-branding-experience/"),
-    ("Shoots & Designs", "/shoots-designs/"),
+    ("7 Course", "/7-course-branding-experience/"),
+    ("Branding & Aanbod", "/shoots-designs/"),
+    ("Portfolio & Werk", "/portfolio/"),
     ("Over Jasmijn", "/about/"),
     ("Contact", "/contact/"),
-    ("Plan kennismaking", "/plan-kennismaking/"),
 ]
 
 
@@ -400,6 +400,36 @@ def course_cards_html(link_prefix="/7-course-branding-experience/#"):
     return '<div class="course-grid">' + "".join(cards) + '</div>'
 
 
+# Welke gangen ook los te boeken zijn via Shoots & Designs, en waar dat staat.
+LOSSE_GANGEN = {
+    "positioning-cut": ("Craveable Identity", "/shoots-designs/#craveable-identity", "vanaf €395"),
+    "plating": ("Brand shoot & Branded Templates", "/shoots-designs/#brand-shoots", "vanaf €347"),
+}
+
+
+def course_menu_card_html():
+    rows = []
+    for c in COURSES:
+        losse = LOSSE_GANGEN.get(c["slug"])
+        badge = (
+            f'<a href="{losse[1]}" class="course-menu-badge">Ook los te boeken: {esc(losse[0])} &middot; {esc(losse[2])}</a>'
+            if losse else ""
+        )
+        rows.append(f"""
+      <div class="course-menu-item">
+        <a href="#{c['slug']}" class="course-menu-link">
+          <span class="course-menu-roman">{c['roman']}</span>
+          <span class="course-menu-body">
+            <span class="course-menu-name">{esc(c['name'])}</span>
+            <span class="course-menu-desc">{esc(c['menu_desc'])}</span>
+          </span>
+          <span class="course-menu-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+        {badge}
+      </div>""")
+    return '<div class="course-menu-card">' + "".join(rows) + '</div>'
+
+
 def menu_items_html():
     rows = []
     for item in MENU_ITEMS:
@@ -554,9 +584,19 @@ def work_slider_html():
     </script>'''
 
 
+HERO_VIDEO_PATH = "/images/hero.mp4"
+
+
+def hero_video_html():
+    if not os.path.exists(os.path.join(ROOT, HERO_VIDEO_PATH.lstrip("/"))):
+        return ""
+    return f'<video class="hero-video" autoplay muted loop playsinline poster="/images/banner-jasmijn.jpg"><source src="{HERO_VIDEO_PATH}" type="video/mp4"></video>'
+
+
 def build_home():
     body = f"""
 <section class="hero">
+  {hero_video_html()}
   <div class="hero-bg"></div>
   <div class="hero-content">
     <div class="container">
@@ -808,9 +848,13 @@ def build_seven_courses():
 </section>
 
 <section class="section-light">
-  <div class="container" style="text-align:center;max-width:620px;margin:0 auto 20px;">
+  <div class="container" style="text-align:center;max-width:620px;margin:0 auto 32px;">
     <span class="section-label">Het menu</span>
     <h2 class="section-title section-title-dark">Zeven gangen, in deze volgorde.</h2>
+    <p style="color:rgba(31,19,21,0.6);font-size:16px;">Klik op een gang voor de uitleg. Sommige gangen zijn ook los te boeken.</p>
+  </div>
+  <div class="container">
+    {course_menu_card_html()}
   </div>
 </section>
 {''.join(course_sections)}
@@ -964,7 +1008,7 @@ def build_shoots_designs():
   </div>
 </section>
 
-<section class="section-light">
+<section class="section-light" id="brand-shoots">
   <div class="container">
     <div style="text-align:center;max-width:640px;margin:0 auto 24px;">
       <span class="section-label">Brand shoots</span>
@@ -976,7 +1020,7 @@ def build_shoots_designs():
   </div>
 </section>
 
-<section class="section-dark">
+<section class="section-dark" id="craveable-identity">
   <div class="container">
     {shoots_items_html()}
     <p style="text-align:center;margin-top:8px;color:rgba(245,240,235,0.65);font-size:14px;max-width:640px;margin-left:auto;margin-right:auto;">Templates maak ik alleen met professionele beelden. Heb je die nog niet? Combineer ze met een shoot en je krijgt &euro;50 korting: Kick Off &euro;297, Full Shoot Day &euro;797.</p>
