@@ -384,7 +384,7 @@ h1, h2, h3, h4 { font-family: var(--font-heading); font-weight: 400; text-wrap: 
   color: var(--midnight);
   margin-bottom: 10px;
 }
-.pillar-card p { font-family: var(--font-body); font-size: 13.5px; color: rgba(26,10,13,0.7); }
+.pillar-card p { font-family: var(--font-body); font-size: 15px; color: rgba(26,10,13,0.75); }
 .section-dark .pillar-card { background: rgba(245,240,235,0.04); text-align: center; }
 .section-dark .pillar-card h3 { color: var(--creme); }
 .section-dark .pillar-card p { color: rgba(245,240,235,0.6); }
@@ -464,6 +464,45 @@ h1, h2, h3, h4 { font-family: var(--font-heading); font-weight: 400; text-wrap: 
   box-shadow: 0 20px 45px rgba(26,10,13,0.16);
 }
 .polaroid img { width: 100%; aspect-ratio: 4/5; object-fit: cover; }
+
+/* PORTFOLIO SCROLL (polaroids, scrollen door het werk) */
+.portfolio-scroll {
+  display: flex;
+  gap: 28px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 12px 4px 28px;
+  margin: 0 -4px;
+  -webkit-overflow-scrolling: touch;
+}
+.portfolio-scroll::-webkit-scrollbar { height: 8px; }
+.portfolio-scroll::-webkit-scrollbar-thumb { background: rgba(107,26,42,0.25); border-radius: 4px; }
+.portfolio-polaroid {
+  flex: 0 0 auto;
+  width: min(78vw, 300px);
+  scroll-snap-align: start;
+  background: #fff;
+  padding: 14px 14px 20px;
+  box-shadow: 0 16px 36px rgba(26,10,13,0.14);
+  transform: rotate(var(--tilt, 0deg));
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform 0.25s ease;
+}
+.portfolio-polaroid:hover { transform: rotate(0deg) translateY(-4px); }
+.portfolio-polaroid img { width: 100%; aspect-ratio: 4/5; object-fit: cover; display: block; }
+.portfolio-polaroid .ppf-name { display: block; margin-top: 14px; font-family: var(--font-heading); font-size: 20px; color: var(--midnight); }
+.portfolio-polaroid .ppf-meta { display: block; margin-top: 4px; font-family: var(--font-body); font-size: 14px; color: rgba(26,10,13,0.6); }
+.portfolio-polaroid.is-placeholder { opacity: 0.55; cursor: default; }
+.portfolio-polaroid.is-placeholder .ppf-placeholder {
+  aspect-ratio: 4/5; background: var(--midnight); display: flex; align-items: center; justify-content: center;
+  color: var(--gold); font-family: var(--font-body); font-weight: 600; font-size: 14px;
+}
+.portfolio-scroll-hint { text-align: center; font-size: 14px; color: rgba(31,19,21,0.5); margin-top: -8px; margin-bottom: 20px; }
+@media (max-width: 560px) {
+  .portfolio-polaroid { width: 72vw; }
+}
 
 /* AUDIENCE */
 .audience-grid {
@@ -733,7 +772,7 @@ a.course-link { text-decoration: none; color: inherit; display: grid; }
 .menu-item-feature .menu-item-head h3 { color: var(--creme); }
 .menu-item-feature .menu-price { color: var(--gold); }
 .menu-item-feature p { color: rgba(245,240,235,0.85); }
-.menu-item-note { font-size: 13px !important; color: var(--gold) !important; font-family: var(--font-body) !important; }
+.menu-item-note { font-size: 14px !important; color: var(--gold) !important; font-family: var(--font-body) !important; }
 
 /* COURSE MENU CARD (witte menukaart, 7 gangen) */
 .course-menu-card {
@@ -755,12 +794,12 @@ a.course-link { text-decoration: none; color: inherit; display: grid; }
 .course-menu-roman { font-family: var(--font-heading); font-size: 28px; color: var(--pepper); width: 1.4em; flex-shrink: 0; text-align: center; }
 .course-menu-body { flex-grow: 1; display: flex; flex-direction: column; gap: 2px; }
 .course-menu-name { font-family: var(--font-heading); font-size: 20px; color: var(--midnight); }
-.course-menu-desc { font-size: 13.5px; color: rgba(26,10,13,0.6); }
+.course-menu-desc { font-size: 15px; color: rgba(26,10,13,0.65); }
 .course-menu-arrow { font-size: 20px; color: var(--gold); flex-shrink: 0; }
 .course-menu-badge {
   display: inline-block; margin: 0 8px 14px 54px;
-  font-family: var(--font-accent); font-size: 12.5px; letter-spacing: 0.02em;
-  color: var(--pepper); text-decoration: none; border-bottom: 1px dotted var(--pepper);
+  font-family: var(--font-body); font-weight: 600; font-size: 14px; letter-spacing: 0.01em;
+  color: var(--burgundy); text-decoration: none; border-bottom: 1px dotted var(--burgundy);
 }
 .course-menu-badge:hover { color: var(--burgundy); }
 
@@ -770,7 +809,7 @@ a.course-link { text-decoration: none; color: inherit; display: grid; }
 .addon-item-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; margin-bottom: 8px; }
 .addon-item-head h4 { font-family: var(--font-heading); font-size: 18px; color: var(--creme); line-height: 1.2; }
 .addon-price { font-family: var(--font-accent); font-size: 15px; color: var(--gold); white-space: nowrap; }
-.addon-item p { font-size: 13.5px; color: rgba(245,240,235,0.65); margin: 0; }
+.addon-item p { font-size: 15px; color: rgba(245,240,235,0.7); margin: 0; }
 
 /* PROGRESS MENU (Branding Dashboard preview) */
 .progress-menu { background: var(--ivory); color: var(--ink); max-width: 720px; margin: 0 auto; padding: clamp(24px,4vw,44px); }
@@ -783,15 +822,15 @@ a.course-link { text-decoration: none; color: inherit; display: grid; }
 .progress-number {
   width: 34px; height: 34px; flex-shrink: 0;
   display: flex; align-items: center; justify-content: center;
-  border-radius: 50%; font-family: var(--font-accent); font-size: 13px;
+  border-radius: 50%; font-family: var(--font-accent); font-size: 15px;
   border: 1px solid rgba(107,26,42,0.3); color: var(--midnight);
 }
-.progress-done .progress-number { background: var(--gold); border-color: var(--gold); color: var(--midnight); font-size: 16px; }
-.progress-active .progress-number { border-color: var(--pepper); color: var(--pepper); }
+.progress-done .progress-number { background: var(--gold); border-color: var(--gold); color: var(--midnight); font-size: 17px; }
+.progress-active .progress-number { border-color: var(--pepper); color: var(--burgundy); font-weight: 700; }
 .progress-body { flex-grow: 1; }
-.progress-name { font-weight: 700; font-size: 15.5px; color: var(--midnight); }
-.progress-desc { font-size: 13.5px; color: rgba(26,10,13,0.6); margin-top: 2px; }
-.progress-status { font-size: 12px; font-weight: 700; letter-spacing: 0.03em; text-transform: uppercase; white-space: nowrap; padding: 4px 10px; border-radius: 2px; }
+.progress-name { font-weight: 700; font-size: 16px; color: var(--midnight); }
+.progress-desc { font-size: 15px; color: rgba(26,10,13,0.65); margin-top: 2px; }
+.progress-status { font-size: 12.5px; font-weight: 700; letter-spacing: 0.03em; text-transform: uppercase; white-space: nowrap; padding: 4px 10px; border-radius: 2px; }
 .progress-status-done { background: rgba(201,160,96,0.18); color: var(--midnight); }
 .progress-status-active { background: var(--pepper); color: var(--creme); }
 .progress-status-open { background: rgba(107,26,42,0.08); color: rgba(26,10,13,0.5); }
@@ -805,7 +844,7 @@ a.course-link { text-decoration: none; color: inherit; display: grid; }
 }
 .quiz-card-title { font-family: var(--font-heading); font-size: 28px; color: var(--midnight); margin-bottom: 18px; }
 .quiz-form { display: grid; gap: 16px; font-family: var(--font-body); }
-.quiz-form-note { font-family: var(--font-body); font-size: 12.5px; line-height: 1.5; color: rgba(26,10,13,0.6); }
+.quiz-form-note { font-family: var(--font-body); font-size: 13.5px; line-height: 1.5; color: rgba(26,10,13,0.65); }
 .quiz-card-alt { font-family: var(--font-body); margin-top: 18px; padding-top: 16px; border-top: 1px solid rgba(107,26,42,0.15); font-size: 14px; }
 
 /* ARCHETYPES */
@@ -819,7 +858,7 @@ a.course-link { text-decoration: none; color: inherit; display: grid; }
 }
 .archetype:hover { background: rgba(245, 240, 235, 0.08); border-color: var(--gold); transform: translateY(-3px); }
 .archetype dt { display: block; font-size: 26px; color: var(--creme); }
-.archetype dd { font-family: var(--font-body); margin-top: 6px; font-size: 13px; color: rgba(245,240,235,0.7); line-height: 1.5; }
+.archetype dd { font-family: var(--font-body); margin-top: 6px; font-size: 14.5px; color: rgba(245,240,235,0.75); line-height: 1.5; }
 
 /* FAQ */
 .faq-list { display: flex; flex-direction: column; font-family: var(--font-body); }

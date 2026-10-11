@@ -684,20 +684,11 @@ def build_home():
 </section>
 
 <section class="section-dark" id="methode">
-  <div class="container">
-    <div style="text-align:center;max-width:620px;margin:0 auto 48px;">
-      <span class="section-label">De methode</span>
-      <h2 class="section-title section-title-light">The 7-Course Method</h2>
-      <p style="color:rgba(247,240,236,0.75);font-size:17px;">Zeven gangen, in deze volgorde. Een chef begint niet bij het dessert.</p>
-    </div>
-    {course_cards_html()}
-    <div class="dessert-card">
-      <span class="accent-label">Het dessert</span>
-      <h3>De Signature Dish</h3>
-      <p>Na de zeven gangen volgt het dessert: jouw Signature Dish. De quiz die laat zien welk brand-archetype je bent &mdash; en het startpunt van elk traject hierna.</p>
-      <p style="margin-top:18px;"><a href="#quiz" class="btn-primary">Doe de Signature Dish Quiz</a></p>
-    </div>
-    <p style="text-align:center;margin-top:36px;"><a href="/7-course-branding-experience/" class="btn-outline-light">Bekijk alle 7 gangen</a></p>
+  <div class="container" style="text-align:center;max-width:620px;margin:0 auto;">
+    <span class="section-label">De methode</span>
+    <h2 class="section-title section-title-light">The 7-Course Method</h2>
+    <p style="color:rgba(247,240,236,0.8);font-size:17px;">Zeven gangen, in deze volgorde. Een chef begint niet bij het dessert. Elke gang heeft zijn eigen plek in je traject &mdash; en je Signature Dish komt pas na de laatste.</p>
+    <p style="margin-top:28px;"><a href="/7-course-branding-experience/" class="btn-primary">Bekijk het hele menu</a></p>
   </div>
 </section>
 
@@ -903,7 +894,7 @@ def build_seven_courses():
 <section class="section-dark" id="de-rekening">
   <div class="container">
     <div style="text-align:center;max-width:640px;margin:0 auto 32px;">
-      <span class="section-label">De rekening</span>
+      <span class="section-label">Je investering</span>
       <h2 class="section-title section-title-light">{esc(BRAND_EXPERIENCE['price'])}</h2>
       <p style="color:rgba(245,240,235,0.8);font-size:16px;">{esc(BRAND_EXPERIENCE['desc'])}</p>
       <p style="color:var(--gold);font-size:14px;margin-top:10px;">{esc(BRAND_EXPERIENCE['note'])}</p>
@@ -961,7 +952,7 @@ def shoots_items_html():
         <div class="menu-item-head">
           <h3>{esc(item['name'])}</h3>
           <span class="menu-leader" aria-hidden="true"></span>
-          <span class="menu-price">{esc(item['price'])} <span style="font-size:13px;color:var(--pepper);">({esc(item['note'])})</span></span>
+          <span class="menu-price">{esc(item['price'])} <span style="font-size:15px;color:var(--burgundy);">({esc(item['note'])})</span></span>
         </div>
         <p>{esc(item['desc'])}</p>
         <a href="{item['href']}">{esc(item['cta'])}</a>
@@ -975,7 +966,7 @@ def build_shoots_designs():
         <div class="menu-item-head">
           <h3>{esc(name)}</h3>
           <span class="menu-leader" aria-hidden="true"></span>
-          <span class="menu-price">{esc(price)} <span style="font-size:13px;color:var(--pepper);">({esc(with_templates)})</span></span>
+          <span class="menu-price">{esc(price)} <span style="font-size:15px;color:var(--burgundy);">({esc(with_templates)})</span></span>
         </div>
         <p>{esc(desc)}</p>
       </article>""" for name, price, with_templates, desc in SHOOTS)
@@ -1099,30 +1090,34 @@ PORTFOLIO_FILTERS = ["Brand shoots", "Branded Templates", "Craveable Identity", 
 
 
 def build_portfolio_index():
+    tilts = ["-2deg", "1.6deg", "-1.4deg", "1.8deg", "-1deg"]
     cards = []
     for i, p in enumerate(PORTFOLIO):
         cards.append(f"""
-      <a class="portfolio-teaser" href="/portfolio/{p['slug']}/">
+      <a class="portfolio-polaroid" href="/portfolio/{p['slug']}/" style="--tilt:{tilts[i % len(tilts)]}">
         <img src="/images/shoot{i+1}.svg" alt="{esc(p['name'])} brand fotografie, {esc(p['industry'])}" width="900" height="1125" loading="lazy">
-        <div class="portfolio-teaser-label"><span>{esc(p['name'])}</span><small>{esc(p['client'])} &mdash; {esc(p['industry'])}</small></div>
+        <span class="ppf-name">{esc(p['name'])}</span>
+        <span class="ppf-meta">{esc(p['client'])} &mdash; {esc(p['industry'])}</span>
       </a>""")
-    for p in PORTFOLIO_PLACEHOLDERS:
+    for i, p in enumerate(PORTFOLIO_PLACEHOLDERS):
         cards.append(f"""
-      <div class="portfolio-teaser" style="opacity:0.45;cursor:default;">
-        <div style="aspect-ratio:4/5;background:var(--midnight);display:flex;align-items:center;justify-content:center;color:var(--gold);font-family:var(--font-accent);font-size:13px;">Case volgt</div>
-        <div class="portfolio-teaser-label"><span>{esc(p['name'])}</span><small>{esc(p['industry'])}</small></div>
+      <div class="portfolio-polaroid is-placeholder" style="--tilt:{tilts[(i + len(PORTFOLIO)) % len(tilts)]}">
+        <div class="ppf-placeholder">Case volgt</div>
+        <span class="ppf-name">{esc(p['name'])}</span>
+        <span class="ppf-meta">{esc(p['industry'])}</span>
       </div>""")
-    filters = "".join(f'<span class="chip" style="display:inline-block;border:1px solid var(--burgundy);border-radius:2px;padding:6px 14px;margin:0 8px 8px 0;font-size:13px;color:var(--burgundy);">{esc(f)}</span>' for f in PORTFOLIO_FILTERS)
+    filters = "".join(f'<span class="chip" style="display:inline-block;border:1px solid var(--burgundy);border-radius:2px;padding:7px 16px;margin:0 8px 8px 0;font-size:14px;color:var(--burgundy);">{esc(f)}</span>' for f in PORTFOLIO_FILTERS)
     body = f"""
 <section class="section-light">
   <div class="container">
     <div style="text-align:center;max-width:680px;margin:0 auto 32px;">
       <span class="section-label">Signature Dishes</span>
       <h1 class="section-title section-title-dark">Geselecteerd werk.</h1>
-      <p style="color:rgba(31,19,21,0.6);">Elk project hieronder doorliep de volledige <a href="/7-course-branding-experience/">7-Course Brand Experience</a>, of een losse gang via <a href="/shoots-designs/">Shoots &amp; Designs</a>.</p>
+      <p style="color:rgba(31,19,21,0.65);font-size:16px;">Elk project hieronder doorliep de volledige <a href="/7-course-branding-experience/">7-Course Brand Experience</a>, of een losse gang via <a href="/shoots-designs/">Shoots &amp; Designs</a>.</p>
     </div>
-    <div style="text-align:center;margin-bottom:32px;">{filters}</div>
-    <div class="portfolio-teaser-grid">{''.join(cards)}</div>
+    <div style="text-align:center;margin-bottom:12px;">{filters}</div>
+    <p class="portfolio-scroll-hint">&larr; Scroll door het werk &rarr;</p>
+    <div class="portfolio-scroll">{''.join(cards)}</div>
   </div>
 </section>
 """
@@ -1158,7 +1153,10 @@ def build_portfolio_cases():
       <div class="case-block"><h2>De launch</h2><p>{esc(p['launch'])}</p></div>
       <div class="case-block"><h2>Het resultaat</h2><p>{esc(p['result'])}</p></div>
     </div>
-    <blockquote class="case-quote" style="display:block;max-width:640px;margin:48px auto 0;">&ldquo;{esc(p['quote'])}&rdquo;</blockquote>
+    <blockquote class="case-quote" style="display:block;max-width:640px;margin:48px auto 0;">
+      &ldquo;{esc(p['quote'])}&rdquo;
+      <footer style="margin-top:14px;font-family:var(--font-body);font-style:normal;font-size:14px;font-weight:600;color:var(--burgundy);">&mdash; {esc(p['client'])}, {esc(p['industry'])}</footer>
+    </blockquote>
     <p style="text-align:center;margin-top:48px;">
       <a href="/portfolio/" class="btn-outline-dark">Terug naar portfolio</a>
       &nbsp; <a href="/7-course-branding-experience/" class="btn-outline-dark">Bekijk de 7 gangen</a>
@@ -1318,7 +1316,7 @@ def build_contact():
         <textarea id="what" name="what" rows="4" required></textarea>
       </div>
       <button type="submit" class="btn-primary" style="border:none;cursor:pointer;">Verstuur</button>
-      <p style="font-size:13px;color:rgba(31,19,21,0.5);margin-top:10px;">Je gegevens staan veilig opgeslagen in de EU, en alleen jij en ik zien ze.</p>
+      <p style="font-size:14px;color:rgba(31,19,21,0.55);margin-top:10px;">Je gegevens staan veilig opgeslagen in de EU, en alleen jij en ik zien ze.</p>
     </form>
     <div style="text-align:center;margin-top:40px;color:rgba(31,19,21,0.5);font-size:14px;">
       Studio Crave &middot; We create cravings
