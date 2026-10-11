@@ -69,10 +69,10 @@ h1, h2, h3, h4 { font-family: var(--font-heading); font-weight: 400; text-wrap: 
 }
 .nav-links a {
   text-decoration: none;
-  color: rgba(245, 240, 235, 0.82);
-  font-size: 13px;
+  color: rgba(245, 240, 235, 0.85);
+  font-size: 14px;
   font-weight: 500;
-  letter-spacing: 1px;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   transition: color 0.2s ease;
 }
@@ -716,35 +716,86 @@ a.course-link { text-decoration: none; color: inherit; display: grid; }
 }
 .case-block p { font-family: var(--font-body); font-size: 16px; color: var(--ink); }
 
-/* CONTACT FORM */
-.contact-form { max-width: 640px; margin: 0 auto; display: grid; gap: 22px; font-family: var(--font-body); }
-.form-row { display: grid; gap: 8px; }
+/* FORMS (contact + quiz share one look) */
+.contact-form, .quiz-form { max-width: 640px; margin: 0 auto; display: grid; gap: 22px; font-family: var(--font-body); }
+.form-row { display: grid; gap: 8px; position: relative; }
 .form-row-group { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
-.contact-form label {
-  font-size: 12px;
+.contact-form label, .quiz-form label {
+  font-size: 13px;
   font-weight: 700;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--burgundy);
 }
 .contact-form input,
 .contact-form select,
-.contact-form textarea {
+.contact-form textarea,
+.quiz-form input,
+.quiz-form select,
+.quiz-form textarea {
   font-family: var(--font-body);
-  font-size: 15px;
+  font-size: 16px;
   padding: 12px 14px;
   border-radius: 2px;
-  border: 1px solid rgba(107,26,42,0.25);
+  border: 1.5px solid rgba(107,26,42,0.25);
   background: #fff;
   color: var(--ink);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
 }
 .contact-form input:focus,
 .contact-form select:focus,
-.contact-form textarea:focus {
-  outline: 2px solid var(--gold);
-  outline-offset: 1px;
+.contact-form textarea:focus,
+.quiz-form input:focus,
+.quiz-form select:focus,
+.quiz-form textarea:focus {
+  outline: none;
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(201,160,96,0.25);
 }
-.contact-form button { justify-self: start; border: none; cursor: pointer; }
+.contact-form button, .quiz-form button { justify-self: start; border: none; cursor: pointer; }
+
+/* Validation states (added by the form-validation script) */
+.form-row.has-error input,
+.form-row.has-error select,
+.form-row.has-error textarea {
+  border-color: var(--pepper);
+  box-shadow: 0 0 0 3px rgba(200,0,26,0.12);
+}
+.form-row.is-valid input,
+.form-row.is-valid select,
+.form-row.is-valid textarea {
+  border-color: #3c8a5c;
+}
+.field-error {
+  display: block;
+  min-height: 1em;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: normal;
+  color: var(--pepper);
+}
+.form-success {
+  display: none;
+  font-size: 15px;
+  font-weight: 600;
+  color: #3c8a5c;
+  background: rgba(60,138,92,0.1);
+  border: 1px solid rgba(60,138,92,0.3);
+  border-radius: 2px;
+  padding: 12px 16px;
+  margin: 0;
+}
+.form-success.visible { display: block; }
+@keyframes form-shake {
+  10%, 90% { transform: translateX(-1px); }
+  20%, 80% { transform: translateX(2px); }
+  30%, 50%, 70% { transform: translateX(-4px); }
+  40%, 60% { transform: translateX(4px); }
+}
+.js-validate.shake { animation: form-shake 0.4s ease; }
+@media (prefers-reduced-motion: reduce) { .js-validate.shake { animation: none; } }
+
 .visually-hidden {
   position: absolute; width: 1px; height: 1px;
   overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap;

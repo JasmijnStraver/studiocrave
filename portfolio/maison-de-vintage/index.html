@@ -102,6 +102,85 @@ window.addEventListener('scroll', () => {
   const btn = document.getElementById('scrollTop');
   if (window.scrollY > 400) { btn.classList.add('visible'); } else { btn.classList.remove('visible'); }
 });
+
+// Mobile menu: keep aria-expanded in sync, and close the menu once a link is chosen.
+(function () {
+  var toggle = document.querySelector('.nav-toggle');
+  var links = document.getElementById('navLinks');
+  if (!toggle || !links) return;
+  toggle.setAttribute('aria-expanded', 'false');
+  toggle.addEventListener('click', function () {
+    var isOpen = links.classList.contains('open');
+    toggle.setAttribute('aria-expanded', String(isOpen));
+  });
+  links.querySelectorAll('a').forEach(function (a) {
+    a.addEventListener('click', function () {
+      links.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+})();
+
+// Form validation: inline feedback as people type, then a mailto fallback on submit
+// (this is a static site with no backend — swap data-mailto for a real endpoint later if needed).
+document.querySelectorAll('.js-validate').forEach(function (form) {
+  var fields = Array.prototype.slice.call(form.querySelectorAll('input, select, textarea'));
+
+  function messageFor(field) {
+    if (field.validity.valueMissing) return 'Dit veld is verplicht.';
+    if (field.validity.typeMismatch && field.type === 'email') return 'Vul een geldig e-mailadres in.';
+    return 'Controleer dit veld.';
+  }
+
+  function validateField(field) {
+    var row = field.closest('.form-row');
+    if (!row) return true;
+    var errorEl = row.querySelector('.field-error');
+    var ok = field.checkValidity();
+    row.classList.toggle('has-error', !ok);
+    row.classList.toggle('is-valid', ok && field.value.trim() !== '');
+    if (errorEl) errorEl.textContent = ok ? '' : messageFor(field);
+    return ok;
+  }
+
+  fields.forEach(function (field) {
+    field.addEventListener('blur', function () { validateField(field); });
+    field.addEventListener('input', function () {
+      var row = field.closest('.form-row');
+      if (row && row.classList.contains('has-error')) validateField(field);
+    });
+  });
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var allOk = true;
+    var firstInvalid = null;
+    fields.forEach(function (field) {
+      var ok = validateField(field);
+      if (!ok) {
+        allOk = false;
+        if (!firstInvalid) firstInvalid = field;
+      }
+    });
+    if (!allOk) {
+      if (firstInvalid) firstInvalid.focus();
+      form.classList.remove('shake');
+      void form.offsetWidth;
+      form.classList.add('shake');
+      return;
+    }
+    var lines = fields.map(function (field) { return field.name + ': ' + field.value; });
+    var to = form.getAttribute('data-mailto') || 'info@studiocrave.nl';
+    var subject = form.getAttribute('data-subject') || 'Bericht via studiocrave.nl';
+    var body = encodeURIComponent(lines.join('\n'));
+    window.location.href = 'mailto:' + to + '?subject=' + encodeURIComponent(subject) + '&body=' + body;
+    var successEl = form.querySelector('.form-success');
+    if (successEl) {
+      successEl.innerHTML = form.getAttribute('data-success') || 'Bedankt voor je bericht!';
+      successEl.classList.add('visible');
+    }
+  });
+});
 </script>
 
 </body>
