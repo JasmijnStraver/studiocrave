@@ -29,6 +29,7 @@ COURSES = [
         "n": "01", "roman": "I", "slug": "raw-ingredients", "name": "Raw Ingredients",
         "short": "Wie ben je echt en wat breng je mee? Je energie, je verhaal, je expertise en je rafelrandjes.",
         "menu_desc": "Wie je echt bent: verhaal, energie, expertise, rafelrandjes",
+        "detail": "Wie je echt bent: je verhaal, je energie, je expertise en je rafelrandjes, want daar zit de smaak. We starten met een kick-off call. Alles wat je meebrengt, komt in je persoonlijke merkgeheugen. Daar bouwt de rest op.",
         "what": "We brengen in kaart wie je bent, wat je al weet, en wat je meeneemt uit alles wat je al hebt opgebouwd — voordat er iets veranderd wordt.",
         "receive": "Een helder beeld van je ruwe ingrediënten: je sterktes, je verhaal, en de gaten die het echt waard zijn om te dichten.",
         "why": "De meeste rebrands gaan hier al mis. Je kunt geen sterk merk bouwen op ingrediënten waar nog niemand goed naar heeft gekeken.",
@@ -38,6 +39,7 @@ COURSES = [
         "n": "02", "roman": "II", "slug": "flavor-profile", "name": "Flavor Profile",
         "short": "De smaak van je merk: tone of voice, energie en vibe. Wat maakt jou herkenbaar na één zin?",
         "menu_desc": "Tone of voice, energie en vibe",
+        "detail": "Hoe je klinkt als niemand meekijkt. Je toon, je woorden wél en je woorden nooit. Vanaf hier klinkt alles wat je schrijft als jou.",
         "what": "We bepalen hoe je merk klinkt en voelt — de woorden, de toon en de energie die overal terugkomen.",
         "receive": "Een tone-of-voice-gids: hoe je wel schrijft, hoe je nooit schrijft, en de taal die onmiskenbaar van jou is.",
         "why": "Zonder uitgesproken smaak ben je gewoon... correct. En correct wordt niet onthouden.",
@@ -47,6 +49,7 @@ COURSES = [
         "n": "03", "roman": "III", "slug": "signature-sauce", "name": "Signature Sauce",
         "short": "Jouw methode, visie en frameworks. Het ding waar mensen voor terugkomen.",
         "menu_desc": "Jouw unieke methode, visie en frameworks",
+        "detail": "Je werkwijze, helder gemaakt. Een methode met een naam, stappen en een belofte. Die komt later terug in je beelden en templates.",
         "what": "We halen eruit wat jij anders doet dan ieder ander, en zetten dat om in taal en een framework dat klanten herkennen.",
         "receive": "Jouw signature positioneringszin, plus de bewijsstukken die hem onderbouwen.",
         "why": "Dit is waar klanten voor terugkomen, en wat ze doorvertellen als ze je aanbevelen.",
@@ -56,6 +59,7 @@ COURSES = [
         "n": "04", "roman": "IV", "slug": "positioning-cut", "name": "Positioning Cut",
         "short": "Waar snijd je jezelf los van de massa? Je niche, je claims en je grenzen.",
         "menu_desc": "Niche, claims en grenzen + voorbereiding brand shoot",
+        "detail": "Kiezen, en nee durven zeggen. Je belofte, je doelgroep en wat je níet bent. Hier krijgt je merk ook een gezicht: je Craveable Identity, met logo, kleuren, lettertypen en beeldstijl. En we bereiden je brand shoot voor.",
         "what": "We beslissen wat je merk niet is — welke doelgroep, diensten en taal je bewust achterlaat.",
         "receive": "Een scherpe positionering: je niche, je claim, en de grenzen die hem helder houden.",
         "why": "Een merk dat iedereen wil bedienen, wordt door niemand gekozen. Snijden is wat de rest van het menu logisch maakt.",
@@ -65,6 +69,7 @@ COURSES = [
         "n": "05", "roman": "V", "slug": "plating", "name": "Plating",
         "short": "Hoe je jezelf serveert: je brand shoot, je contentformats, je hooks en je verhalen.",
         "menu_desc": "Content formats, hooks en storytelling + brand shoot",
+        "detail": "De gang waar je merk zichtbaar wordt. Je brand shoot, geregisseerd op jouw verhaal. Daarna ruim 100 social templates met je eigen foto's, en een contentplan waarin je pijlers en je funnel samenkomen.",
         "what": "Logo, kleur, typografie en art direction — gebouwd vanuit de strategie, niet ervoor.",
         "receive": "Een complete visuele identiteit: je merktekens, kleurenpalet, typografie en gebruiksrichtlijnen.",
         "why": "Plating is presentatie, geen decoratie. Het is het eerste dat mensen zien, en het moet meteen het juiste zeggen.",
@@ -74,6 +79,7 @@ COURSES = [
         "n": "06", "roman": "VI", "slug": "pairing", "name": "Pairing",
         "short": "Klopt alles samen? Je aanbod, je prijs en je klantreis passen bij het merk dat je neerzet.",
         "menu_desc": "Aanbod, prijs en klantreis",
+        "detail": "Verkopen zonder dat het voelt als verkopen. Je aanbod en prijs, en een salespagina die je klanten laat knikken.",
         "what": "We checken of je prijs, je aanbod en de ervaring van je klant allemaal hetzelfde zeggen als je nieuwe merk.",
         "receive": "Een aanbod en klantreis die kloppen met het merk dat je net hebt neergezet.",
         "why": "Een premium merk met een budget-aanbod verwart mensen. Pairing is waar merk en business elkaar ontmoeten.",
@@ -83,6 +89,7 @@ COURSES = [
         "n": "07", "roman": "VII", "slug": "the-experience", "name": "The Experience",
         "short": "Hoe voelt het om met jou te werken? Beleving, energie en exclusiviteit, van eerste DM tot testimonial.",
         "menu_desc": "Hoe samenwerken met jou voelt",
+        "detail": "Hoe het voelt om met jou te werken. Je klantreis, je welkomstmail, je signature touch en hoe je om een review vraagt.",
         "what": "Brand fotografie, launch-content en de kleine details die het werken met jou onvergetelijk maken.",
         "receive": "Launch-klare content, een richting voor je brand fotografie, en een plan om het nieuwe merk de wereld in te brengen.",
         "why": "Mensen onthouden nooit alleen de smaak... ze onthouden hoe jij ze liet voelen.",
@@ -104,77 +111,53 @@ PORTFOLIO = [
         "result": "De relaunch was binnen 48 uur uitverkocht, en klanten bewaren de verpakking nu als onderdeel van het product.",
         "quote": "Klanten bewaren mijn tasjes. Dat zegt genoeg over het merk dat Jasmijn heeft gebouwd.",
     },
-    {
-        "slug": "old-money-power", "name": "Old Money Power",
-        "client": "Lina", "industry": "Business strateeg & leadership coach",
-        "challenge": "Lina's expertise was hoogwaardig, maar haar merk zag eruit als elk ander coach-merk — zachte kleuren, stockfoto's, niets dat paste bij het niveau van haar klanten.",
-        "strategy": "We positioneerden Lina rond quiet confidence: een merk dat geen expertise hoeft te performen, omdat het dat niet nodig heeft.",
-        "positioning": "Old Money Power spreekt leiders aan die al invloed hebben en een coach willen die hun register matcht, niet eentje die indruk probeert te maken.",
-        "voice": "Ingetogen, direct, ongehaast — een stem die nooit oververkoopt omdat het niet hoeft.",
-        "visual": "Een wit maatpak, een vintage cabrio en wijngaarden op de achtergrond: visuele cues geleend van oud geld, niet van nieuwe hustle.",
-        "shoot": "De brand shoot draaide om stilte — Lina gefotografeerd in rust, nooit middenin een pitch.",
-        "launch": "Het nieuwe merk rolde uit via één rustige aankondiging in plaats van een lanceercampagne — consistent met de positionering zelf.",
-        "result": "Lina verdrievoudigde haar prijzen na de lancering en bouwde binnen zes weken een wachtlijst van drie maanden.",
-        "quote": "Mijn klanten boeken nu zonder twijfel. Het merk doet het werk.",
-    },
-    {
-        "slug": "editorial-noir", "name": "Editorial Noir",
-        "client": "Senna", "industry": "Luxe PR- & communicatiebureau",
-        "challenge": "Senna's bureau leverde editorial-niveau werk voor klanten, maar oogde online volledig conventioneel — niets verraadde het smaakniveau achter het werk.",
-        "strategy": "We positioneerden Editorial Noir als een point of view, niet als een dienstenlijst — het bureau dat klanten inhuren om hoe het kijkt, niet alleen om wat het doet.",
-        "positioning": "Editorial Noir leest nu als een klein editorial huis met een uitgesproken mening, wat precies de klanten filtert die een perspectief willen, geen leverancier.",
-        "voice": "Precies, een beetje mysterieus, editorial in plaats van promotioneel — dichter bij de stem van een tijdschrift dan van een bureau.",
-        "visual": "Een Parijse editorial-wereld: zijden hoofddoeken, rode lippen en een krant als terugkerend prop.",
-        "shoot": "In één shoot werden ruim zestig editorial-beelden geproduceerd, goed voor een jaar aan content.",
-        "launch": "De herpositionering lanceerde met één editorial-achtige post die meteen de toon zette voor alles wat volgde.",
-        "result": "High-end klanten benaderen Senna nu rechtstreeks, zonder pitch-traject.",
-        "quote": "Jasmijn zag wie ik was voordat ik het zelf durfde uit te spreken.",
-    },
-    {
-        "slug": "la-dolce-vita", "name": "La Dolce Vita",
-        "client": "Eva", "industry": "Luxury travel & lifestyle ondernemer",
-        "challenge": "Eva draaide vijf verschillende aanbiedingen onder één vage identiteit — niemand kon in één zin uitleggen wat ze eigenlijk deed.",
-        "strategy": "We sneden het aanbod terug tot één duidelijke focus, en bouwden het merk rond die ene belofte in plaats van vijf concurrerende.",
-        "positioning": "La Dolce Vita staat nu voor één ding: een gecureerde, Amalfi-kust-manier van zakendoen en reizen, geen algemeen lifestyle-merk.",
-        "voice": "Zonovergoten en ongehaast, geschreven zoals een goede lange lunch aanvoelt.",
-        "visual": "Strohoeden, wit linnen en een glas wijn met uitzicht — een visuele wereld volledig gebouwd rond mediterrane gemakzucht.",
-        "shoot": "De shoot diende meteen als contentbank, goed voor een heel seizoen aan beeldmateriaal vanuit één locatie.",
-        "launch": "Het versmalde aanbod lanceerde samen met het nieuwe merk, zodat positionering en product tegelijk veranderden.",
-        "result": "Het gerichte aanbod kostte 80% minder werk om te leveren en bracht drie keer zoveel boekingen op.",
-        "quote": "Mensen zeggen: 'ik wil het leven dat jouw merk uitstraalt.' Dat is precies het punt.",
-    },
+]
+
+# Cases nog aan te vullen (echte klanten, nog geen casetekst — geen content verzinnen).
+PORTFOLIO_PLACEHOLDERS = [
+    {"slug": "personal-brand", "name": "Personal brand positionering", "industry": "Positionering"},
+    {"slug": "luve", "name": "LUVÉ", "industry": "Craveable Identity"},
+    {"slug": "lamare-professional", "name": "LAMARE Professional", "industry": "Branded Templates"},
+    {"slug": "nailsroom-breda", "name": "Nailsroom Breda", "industry": "Brand shoot"},
 ]
 
 MENU_ITEMS = [
     {
-        "name": "Brand Audit", "price": "€77", "href": "/contact/", "cta": "Bekijk de Audit",
-        "desc": "Een mini-cursus in zeven modules, één per gang, plus een persoonlijke Loom van twintig minuten waarin ik jouw merk doorlicht en een richting voorstel. Maximaal vijftien per week, omdat ik ze zelf maak.",
+        "name": "Brand Audit", "price": "€77", "href": "/contact/", "cta": "Start met een audit",
+        "desc": "Ik proef je merk zoals het nu is. Per gang (je verhaal, je toon en je positionering) krijg je een score, wat ik zie en je eerste stap. Plus je top 3 acties, mijn advies en een persoonlijke video waarin ik je audit doorloop. Twee weken, plus vier weken toegang tot je portaal.",
     },
     {
-        "name": "Craveable Identity", "price": "€395", "href": "/contact/", "cta": "Bekijk Craveable Identity",
-        "desc": "Jouw visuele identiteit: logo, kleurenpalet, typografie en gebruiksrichtlijnen, gebouwd op wat je al hebt in plaats van vanaf nul.",
-    },
-    {
-        "name": "Branded Templates", "price": "€450", "href": "/contact/", "cta": "Bekijk de templates",
-        "desc": "Een complete templateset voor content, voorstellen en documenten in jouw huisstijl. Zelf doorkoken, zonder ooit los van je merk te raken.",
-    },
-    {
-        "name": "Be Your Own Chef", "price": "€25 / maand", "href": "/contact/", "cta": "Meer over Be Your Own Chef",
-        "desc": "Doorlopende toegang tot de Branding Dashboard: jouw merk, je documenten en de skills die je elke week helpen zelf door te koken.",
+        "name": "Be Your Own Chef", "price": "€25 / maand (binnenkort)", "href": "/contact/", "cta": "Meer info",
+        "desc": "Alle zeven gangen in je eigen tempo, met tools die je merk kennen, je sous-chef en je workflow. Zelf bouwen, zo lang je wilt.",
     },
 ]
 
 BRAND_EXPERIENCE = {
     "name": "7-Course Brand Experience", "price": "€2.500",
-    "desc": "Het volledige menu, done-with-you: alle zeven gangen van positionering tot launch, inclusief je eigen shootdag, stem, visuele identiteit en een launchplan.",
-    "note": "Het complete traject van The Branding Kitchen™, in deze volgorde.",
+    "desc": "Drie maanden traject plus drie maanden toegang tot je portaal. Alle zeven gangen, van je rauwe ingrediënten tot je Signature Dish.",
+    "note": "Introductieprijs (later €3.500). Los geboekt kost dit samen €5.162 — jij betaalt €2.500.",
 }
 
+# Brand shoots (Shoots & Designs)
+SHOOTS = [
+    ("Kick Off Shoot", "€347", "€297 met templates", "1 uur, minimaal 15 foto's. Voor je eerste set eigen beelden: je profielfoto, je website, je eerste posts."),
+    ("Full Shoot Day", "€847", "€797 met templates", "3 tot 4 uur, 60 tot 80 foto's. Voor maanden aan content: meerdere looks, locaties en momenten."),
+]
+
+# Craveable Identity + Branded Templates (Shoots & Designs)
+SHOOTS_ITEMS = [
+    {
+        "name": "Craveable Identity", "price": "€395", "note": "later €450", "href": "/contact/", "cta": "Bekijk Craveable Identity",
+        "desc": "Je merk in de basis neergezet. Een logo-set, je kleurpalet, lettertypen, beeldstijl en grafische elementen die samen één gevoel oproepen. In een brandbook en een ingerichte Brand Kit in Canva, met basistoepassingen zoals je profielfoto en mailhandtekening. Eén maand, plus een maand toegang tot je portaal.",
+    },
+    {
+        "name": "Branded Templates", "price": "€450", "note": "later €550", "href": "/contact/", "cta": "Bekijk de templates",
+        "desc": "Ruim 100 social templates in jouw kleuren en lettertypen, zo goed passend dat je ze niet meer als template herkent. Afgestemd op wat je nodig hebt: zichtbaarheid, een lancering of verkoop. Met je brandbook en Brand Kit in Canva, zodat je zelf in een paar minuten post. Eén maand, plus een maand toegang tot je portaal.",
+    },
+]
+
 ADDONS = [
-    ("Kick Off Shoot", "€347", "Een korte brand shoot om je nieuwe merk mee te lanceren."),
-    ("Full Shoot Day", "€847", "Een volledige shootdag: genoeg beeldmateriaal voor maanden aan content."),
     ("Andere shoots en campagnes", "Op aanvraag", "Van productshoots tot campagnes op maat."),
-    ("Losse gang bijboeken", "In overleg", "Eén specifieke gang opnieuw of extra, los van een volledig traject."),
     ("Website op maat", "In overleg", "Een website die klopt met de identiteit die we samen hebben gebouwd."),
     ("Iets anders", "In overleg", "Past je vraag niet in het menu? Vertel me waar je naar zoekt."),
 ]
@@ -201,19 +184,19 @@ ARCHETYPES = [
 ]
 
 SERVICE_LINKS = [
-    ("Brand Strategie", "/brand-strategy/"),
-    ("Visuele Identiteit", "/visual-identity/"),
-    ("Branding Fotografie", "/branding-photography/"),
-    ("Branding in Breda", "/branding-breda/"),
+    ("7-Course Brand Experience", "/7-course-branding-experience/"),
+    ("Shoots & Designs", "/shoots-designs/"),
+    ("Portfolio", "/portfolio/"),
+    ("Plan kennismaking", "/plan-kennismaking/"),
 ]
 
 NAV_LINKS = [
-    ("De Keuken", "/the-branding-kitchen/"),
-    ("De 7 Gangen", "/7-course-branding-experience/"),
-    ("Branding", "/branding/"),
-    ("Werk", "/portfolio/"),
+    ("Studio Crave", "/"),
+    ("7-Course Brand Experience", "/7-course-branding-experience/"),
+    ("Shoots & Designs", "/shoots-designs/"),
     ("Over Jasmijn", "/about/"),
     ("Contact", "/contact/"),
+    ("Plan kennismaking", "/plan-kennismaking/"),
 ]
 
 
@@ -293,16 +276,20 @@ def breadcrumbs_html(trail):
 
 def nav_html(current_path):
     items = []
-    for label, path in NAV_LINKS:
-        cls = ' class="active"' if path == current_path else ""
-        items.append(f'<li><a href="{path}"{cls}>{esc(label)}</a></li>')
+    last = len(NAV_LINKS) - 1
+    for i, (label, path) in enumerate(NAV_LINKS):
+        if i == last:
+            cls = "btn-nav"
+        else:
+            cls = "active" if path == current_path else ""
+        cls_attr = f' class="{cls}"' if cls else ""
+        items.append(f'<li><a href="{path}"{cls_attr}>{esc(label)}</a></li>')
     return f"""
 <nav class="nav">
   <div class="nav-inner">
     <a href="/" class="nav-logo"><img src="/images/studio-crave-logo-licht.png" alt="Studio Crave"></a>
     <ul class="nav-links" id="navLinks">
       {''.join(items)}
-      <li><a href="/contact/" class="btn-nav">Plan een kennismaking</a></li>
     </ul>
     <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('navLinks').classList.toggle('open')">
       <span></span><span></span><span></span>
@@ -425,17 +412,6 @@ def menu_items_html():
         </div>
         <p>{esc(item['desc'])}</p>
         <a href="{item['href']}">{esc(item['cta'])}</a>
-      </article>""")
-    rows.append(f"""
-      <article class="menu-item menu-item-feature">
-        <div class="menu-item-head">
-          <h3>{esc(BRAND_EXPERIENCE['name'])}</h3>
-          <span class="menu-leader menu-leader-feature" aria-hidden="true"></span>
-          <span class="menu-price">{esc(BRAND_EXPERIENCE['price'])}</span>
-        </div>
-        <p>{esc(BRAND_EXPERIENCE['desc'])}</p>
-        <p class="menu-item-note">{esc(BRAND_EXPERIENCE['note'])}</p>
-        <a href="/contact/" class="btn-primary" style="margin-top:8px;">Plan een kennismaking van 15 minuten</a>
       </article>""")
     return '<div class="menu-list">' + "".join(rows) + '</div>'
 
@@ -589,7 +565,7 @@ def build_home():
           <h1>Ready to create <em>some cravings?</em></h1>
           <p class="hero-sub">Ik maak geen logo's. Ik serveer merken waar mensen naar verlangen.</p>
           <div class="hero-actions" style="justify-content:flex-start;">
-            <a href="#menu-prijzen" class="btn-primary">Bekijk het menu</a>
+            <a href="/7-course-branding-experience/#de-rekening" class="btn-primary">Bekijk het menu</a>
             <a href="#quiz" class="btn-outline-light">Doe de quiz: welk gerecht ben jij?</a>
           </div>
         </div>
@@ -647,9 +623,9 @@ def build_home():
         <p style="margin-top:14px;"><a href="/7-course-branding-experience/" style="font-weight:700;font-size:14px;color:var(--pepper);text-decoration:none;">Proef het menu &rarr;</a></p>
       </div>
       <div class="pillar-card">
-        <h3><a href="/branding/" style="color:inherit;text-decoration:none;">Shoots &amp; Designs</a></h3>
+        <h3><a href="/shoots-designs/" style="color:inherit;text-decoration:none;">Shoots &amp; Designs</a></h3>
         <p>Een brand shoot, een Craveable Identity of Branded Templates. Een sterk stuk van je merk, los geserveerd.</p>
-        <p style="margin-top:14px;"><a href="/branding/" style="font-weight:700;font-size:14px;color:var(--pepper);text-decoration:none;">Bekijk het werk &rarr;</a></p>
+        <p style="margin-top:14px;"><a href="/shoots-designs/" style="font-weight:700;font-size:14px;color:var(--pepper);text-decoration:none;">Bekijk het werk &rarr;</a></p>
       </div>
       <div class="pillar-card">
         <h3><a href="/contact/" style="color:inherit;text-decoration:none;">Brand Audit &middot; &euro;77</a></h3>
@@ -682,28 +658,6 @@ def build_home():
       <p style="margin-top:18px;"><a href="#quiz" class="btn-primary">Doe de Signature Dish Quiz</a></p>
     </div>
     <p style="text-align:center;margin-top:36px;"><a href="/7-course-branding-experience/" class="btn-outline-light">Bekijk alle 7 gangen</a></p>
-  </div>
-</section>
-
-<section class="section-light" id="menu-prijzen">
-  <div class="container">
-    <div style="text-align:center;max-width:640px;margin:0 auto 48px;">
-      <span class="section-label">Menu &amp; prijzen</span>
-      <h2 class="section-title section-title-dark">&Agrave; la carte, of het hele menu.</h2>
-      <p style="color:rgba(31,19,21,0.6);font-size:17px;">Begin met een proeverij of schuif direct aan. Elke gang staat op zichzelf en leidt logisch naar de volgende.</p>
-    </div>
-    {menu_items_html()}
-  </div>
-</section>
-
-<section class="section-dark" id="extra-gangen">
-  <div class="container">
-    <div style="text-align:center;max-width:640px;margin:0 auto 40px;">
-      <span class="section-label">Extra gangen</span>
-      <h2 class="section-title section-title-light">À la carte, los bij te boeken.</h2>
-      <p style="color:rgba(245,240,235,0.7);font-size:16px;">Naast je pakket, of los ernaast.</p>
-    </div>
-    {addons_html()}
   </div>
 </section>
 
@@ -791,14 +745,6 @@ def build_home():
   </div>
 </section>
 
-<section class="section-light">
-  <div class="container" style="max-width:880px;">
-    <span class="section-label" style="text-align:left;">Vragen van tafel</span>
-    <h2 class="section-title section-title-dark" style="text-align:left;margin-bottom:32px;">Veelgestelde vragen</h2>
-    {faq_html()}
-  </div>
-</section>
-
 <section class="cta-section" id="contact">
   <div class="cta-content">
     <h2>Geen losse plaatjes.<br>Een merk dat niet meer te negeren is.</h2>
@@ -821,68 +767,7 @@ def build_home():
 
 
 # ---------------------------------------------------------------------------
-# THE BRANDING KITCHEN
-# ---------------------------------------------------------------------------
-def build_branding_kitchen():
-    body = f"""
-<section class="section-light">
-  <div class="container">
-    <div style="text-align:center;max-width:720px;margin:0 auto 56px;">
-      <span class="section-label">De methode</span>
-      <h1 class="section-title section-title-dark">The Branding Kitchen</h1>
-      <p style="font-size:18px;color:rgba(31,19,21,0.6);">Je merk is geen plaatje. Het is een menu &mdash; en elk merk verdient zijn eigen signature dish.</p>
-    </div>
-    <div class="intro-grid">
-      <div class="intro-text">
-        <p>The Branding Kitchen is de methode van Studio Crave: een branding-traject in zeven gangen, van wie je echt bent tot hoe het voelt om met je te werken.</p>
-        <p>Niets wordt uit het niets verzonnen. Je verhaal, je expertise, je visie en je bestaande publiek zijn de ingredi&euml;nten. Wij ontwikkelen het recept, bepalen de smaak, zorgen voor de juiste plating en lanceren het de wereld in &mdash; in die volgorde, niet andersom.</p>
-        <p>Elke klant doorloopt dezelfde route: <a href="/7-course-branding-experience/">de 7-Course Branding Experience</a>. Zeven gangen, &eacute;&eacute;n proces, geen stap overgeslagen.</p>
-      </div>
-      <div class="intro-image"><img src="/images/jasmijn6.svg" alt="The Branding Kitchen ingrediënten" width="900" height="900" loading="lazy"></div>
-    </div>
-  </div>
-</section>
-
-<section class="section-dark">
-  <div class="container">
-    <span class="section-label">Van ingredi&euml;nt tot launch</span>
-    <h2 class="section-title section-title-light">&Eacute;&eacute;n doorlopend proces, zeven gangen.</h2>
-    <div class="pos-table">
-      {"".join(f'<div class="pos-row"><div class="pos-label">{c["roman"]}</div><div class="pos-value">{esc(c["name"])} &mdash; {esc(c["short"])}</div></div>' for c in COURSES)}
-    </div>
-  </div>
-</section>
-
-<section class="section-light">
-  <div class="container">
-    {course_cards_html()}
-    <p style="text-align:center;margin-top:36px;"><a href="/7-course-branding-experience/" class="btn-primary">Plan een kennismaking</a></p>
-  </div>
-</section>
-
-<section class="section-dark">
-  <div class="container">
-    <div style="text-align:center;max-width:640px;margin:0 auto 40px;">
-      <span class="section-label">Samenwerken</span>
-      <h2 class="section-title section-title-light">Zo volg je je voortgang in de Branding Dashboard.</h2>
-      <p style="color:rgba(245,240,235,0.7);font-size:16px;">Elke klant ziet dit bovenaan Samenwerken, onder &ldquo;Wat je al hebt&rdquo;. Dit is een voorbeeld.</p>
-    </div>
-    {progress_menu_html()}
-  </div>
-</section>
-"""
-    page(
-        "/the-branding-kitchen/",
-        "The Branding Kitchen | Branding Methode | Studio Crave",
-        "The Branding Kitchen is de eigen methode van Studio Crave: branding in zeven gangen, van ingrediënten en recept tot plating en launch.",
-        "The Branding Kitchen",
-        body,
-        trail=[("Home", "/"), ("The Branding Kitchen", "/the-branding-kitchen/")],
-    )
-
-
-# ---------------------------------------------------------------------------
-# 7 COURSE BRANDING EXPERIENCE
+# 7-COURSE BRAND EXPERIENCE (methode + traject + portaal + prijs, in één)
 # ---------------------------------------------------------------------------
 def build_seven_courses():
     course_sections = []
@@ -895,11 +780,8 @@ def build_seven_courses():
     <div class="course-detail">
       <div class="course-detail-number">{c['n']}</div>
       <div>
-        <h2 class="{title_cls}" style="font-size:clamp(28px,3.4vw,42px);font-weight:600;margin-bottom:10px;">{esc(c['name'])}</h2>
-        <p style="color:var(--pepper);font-size:18px;font-weight:700;margin-bottom:20px;">{esc(c['short'])}</p>
-        <p style="margin-bottom:14px;max-width:640px;"><strong>Wat er gebeurt:</strong> {esc(c['what'])}</p>
-        <p style="margin-bottom:14px;max-width:640px;"><strong>Wat je krijgt:</strong> {esc(c['receive'])}</p>
-        <p style="max-width:640px;"><strong>Waarom het telt:</strong> {esc(c['why'])}</p>
+        <h2 class="{title_cls}" style="font-size:clamp(28px,3.4vw,42px);font-weight:600;margin-bottom:14px;">{esc(c['name'])}</h2>
+        <p style="max-width:640px;">{esc(c['detail'])}</p>
       </div>
     </div>
   </div>
@@ -908,17 +790,107 @@ def build_seven_courses():
 <section class="section-light">
   <div class="container" style="text-align:center;max-width:720px;margin:0 auto;">
     <span class="section-label">De signature route</span>
-    <h1 class="section-title section-title-dark">The 7-Course Branding Experience</h1>
-    <p style="font-size:17px;color:rgba(31,19,21,0.6);">Zeven gangen, in deze volgorde. Een chef begint niet bij het dessert. Onderdeel van <a href="/the-branding-kitchen/">The Branding Kitchen</a>.</p>
+    <h1 class="section-title section-title-dark">Zeven gangen. &Eacute;&eacute;n merk dat je niet meer vergeet.</h1>
+    <p style="font-size:17px;color:rgba(31,19,21,0.6);">The Branding Kitchen&trade; serveert je merk in zeven gangen, in drie maanden. Voor ondernemers die willen opvallen als een Michelin-ster in een markt vol fastfood-branding.</p>
+    <div class="hero-actions" style="justify-content:center;margin-top:24px;">
+      <a href="#de-rekening" class="btn-primary">Proef het menu</a>
+      <a href="/plan-kennismaking/" class="btn-outline-dark">Plan een kennismaking</a>
+    </div>
+  </div>
+</section>
+
+<section class="section-dark">
+  <div class="container" style="max-width:780px;margin:0 auto;text-align:center;">
+    <span class="section-label">Het probleem</span>
+    <p style="font-size:19px;color:var(--creme);">Je bent goed in wat je doet. Echt goed. En toch kiest je ideale klant voor iemand anders. Niet omdat die beter is. Omdat die beter smaakt.</p>
+    <p style="color:rgba(245,240,235,0.75);margin-top:14px;">Een goed merk bouw je niet in &eacute;&eacute;n hap. Het begint bij wat je meebrengt, krijgt smaak in je toon, en wordt pas onweerstaanbaar als alles klopt: je verhaal, je beelden, je aanbod en hoe het voelt om met je te werken.</p>
+  </div>
+</section>
+
+<section class="section-light">
+  <div class="container" style="text-align:center;max-width:620px;margin:0 auto 20px;">
+    <span class="section-label">Het menu</span>
+    <h2 class="section-title section-title-dark">Zeven gangen, in deze volgorde.</h2>
   </div>
 </section>
 {''.join(course_sections)}
+
+<section class="section-dark">
+  <div class="container" style="max-width:780px;margin:0 auto;text-align:center;">
+    <span class="section-label">De Signature Dish</span>
+    <p style="font-size:17px;color:rgba(245,240,235,0.9);">Na de zeven gangen serveer ik je Signature Dish: je hele merk op &eacute;&eacute;n bord. Je verhaal, je toon, je methode, je kleuren, je beelden en je templates, bij elkaar en altijd van jou. We sluiten af met een call waarin we je volgende 90 dagen uitzetten.</p>
+  </div>
+</section>
+
+<section class="section-light">
+  <div class="container">
+    <div style="text-align:center;max-width:640px;margin:0 auto 32px;">
+      <span class="section-label">Je eigen keuken, altijd open</span>
+      <h2 class="section-title section-title-dark">Zo volg je je voortgang in de Branding Dashboard.</h2>
+      <p style="color:rgba(31,19,21,0.65);font-size:16px;">Als we samenwerken, krijg je een persoonlijk portaal. Daar staat je menu klaar, vind je alles wat ik voor je opdien, en werk je met tools die je merk al kennen. Geen losse mails, mappen en WeTransfers meer. Alles op &eacute;&eacute;n plek, in jouw stijl.</p>
+    </div>
+    <ul class="recognition-list" style="max-width:760px;margin:0 auto 36px;">
+      <li><strong style="font-family:var(--font-heading);color:var(--burgundy);">Je menu.</strong> Alle gangen, met wat ik opdien en wat jij aanlevert. Je geeft akkoord of feedback, en dan pas gaat de volgende gang open.</li>
+      <li><strong style="font-family:var(--font-heading);color:var(--burgundy);">Tools die je merk kennen.</strong> Voor captions, carrousels, LinkedIn-posts, Reels, mails en meer. Ze kennen je toon, je doelgroep en je verhaal. Ik werk ze elke week bij met wat nu werkt op de kanalen.</li>
+      <li><strong style="font-family:var(--font-heading);color:var(--burgundy);">Je sous-chef.</strong> Stel je vraag over je merk, je traject of je content, ook buiten kantoortijd.</li>
+      <li><strong style="font-family:var(--font-heading);color:var(--burgundy);">Workflow.</strong> Focusblokken, je idee&euml;n op &eacute;&eacute;n plek, je 90-dagenplan en je Human Design als lens voor hoe jij het beste werkt.</li>
+      <li><strong style="font-family:var(--font-heading);color:var(--burgundy);">Documenten.</strong> Je overeenkomst, je werkbladen en alles wat ik voor je klaarzet.</li>
+      <li><strong style="font-family:var(--font-heading);color:var(--burgundy);">Mijn stijl.</strong> Je kleuren, lettertypen, logo's en beelden, klaar om te kopi&euml;ren.</li>
+    </ul>
+    <p style="text-align:center;color:rgba(31,19,21,0.6);max-width:640px;margin:0 auto 32px;">Je portaal blijft open tijdens je traject en nog 3 maanden daarna. Je Signature Dish en je documenten blijven altijd van jou.</p>
+    {progress_menu_html()}
+  </div>
+</section>
+
+<section class="section-dark">
+  <div class="container" style="max-width:780px;margin:0 auto;text-align:center;">
+    <span class="section-label">Drie momenten samen</span>
+    <p style="color:rgba(245,240,235,0.85);font-size:17px;">We spreken elkaar drie keer persoonlijk: bij de start, halverwege en bij de afronding. Daartussen ben ik bereikbaar via je portaal, de app of mail.</p>
+  </div>
+</section>
+
+<section class="section-light">
+  <div class="container" style="max-width:780px;margin:0 auto;text-align:center;">
+    <span class="section-label">Heb je al iets?</span>
+    <p style="font-size:17px;color:rgba(31,19,21,0.75);">Staat je logo al, of je kleuren? Dan vullen we die gang met uitbreidend werk van gelijke waarde, zoals een extra templateset of een uitgebreid moodboard. Je betaalt nooit voor iets wat je al hebt.</p>
+  </div>
+</section>
+
+<section class="section-dark" id="de-rekening">
+  <div class="container">
+    <div style="text-align:center;max-width:640px;margin:0 auto 32px;">
+      <span class="section-label">De rekening</span>
+      <h2 class="section-title section-title-light">{esc(BRAND_EXPERIENCE['price'])}</h2>
+      <p style="color:rgba(245,240,235,0.8);font-size:16px;">{esc(BRAND_EXPERIENCE['desc'])}</p>
+      <p style="color:var(--gold);font-size:14px;margin-top:10px;">{esc(BRAND_EXPERIENCE['note'])}</p>
+      <p style="margin-top:28px;"><a href="/plan-kennismaking/" class="btn-primary">Plan een kennismaking</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="section-light">
+  <div class="container">
+    <div style="text-align:center;max-width:640px;margin:0 auto 40px;">
+      <span class="section-label">Nog niet klaar voor het hele menu?</span>
+      <h2 class="section-title section-title-dark">Begin kleiner.</h2>
+    </div>
+    {menu_items_html()}
+  </div>
+</section>
+
+<section class="section-dark">
+  <div class="container" style="max-width:780px;margin:0 auto;text-align:center;">
+    <span class="section-label">Voor wie</span>
+    <p style="font-size:17px;color:rgba(245,240,235,0.9);">Voor coaches, consultants en andere ondernemers die goed zijn in hun vak, maar online nog niet laten zien wie ze zijn. Je hebt klanten, je hebt een verhaal, en je bent klaar om op te vallen.</p>
+    <p style="color:rgba(245,240,235,0.6);margin-top:12px;">Niet voor wie een snelle fix zoekt. Fastfood-branding is er genoeg.</p>
+  </div>
+</section>
+
 <section class="cta-section">
   <div class="cta-content">
-    <h2>Klaar voor <em>jouw</em> zeven gangen?</h2>
-    <p>Elke klant doorloopt hetzelfde proces, in dezelfde volgorde. Geen gang overgeslagen, niets gebouwd op giswerk.</p>
+    <h2>Klaar om je merk te laten <em>craven</em>?</h2>
     <div class="hero-actions">
-      <a href="/contact/" class="btn-primary">Plan een kennismaking</a>
+      <a href="/plan-kennismaking/" class="btn-primary">Plan een kennismaking</a>
       <a href="/portfolio/" class="btn-outline-light">Bekijk het in het werk</a>
     </div>
   </div>
@@ -926,235 +898,162 @@ def build_seven_courses():
 """
     page(
         "/7-course-branding-experience/",
-        "7-Course Branding Experience | The Branding Kitchen",
-        "De 7-Course Branding Experience is het complete merktraject van Studio Crave: van Raw Ingredients tot The Experience, gang voor gang naar een merk dat klopt.",
-        "The 7-Course Branding Experience",
+        "7-Course Brand Experience | The Branding Kitchen™ | Studio Crave",
+        "De 7-Course Brand Experience is het complete merktraject van Studio Crave: zeven gangen, een eigen portaal en een Signature Dish aan het einde.",
+        "Zeven gangen. Eén merk dat je niet meer vergeet.",
         body,
-        trail=[("Home", "/"), ("7-Course Branding Experience", "/7-course-branding-experience/")],
+        trail=[("Home", "/"), ("7-Course Brand Experience", "/7-course-branding-experience/")],
     )
 
 
 # ---------------------------------------------------------------------------
 # BRANDING (overview / service hub)
 # ---------------------------------------------------------------------------
-def build_branding():
-    body = """
+def shoots_items_html():
+    rows = []
+    for item in SHOOTS_ITEMS:
+        rows.append(f"""
+      <article class="menu-item">
+        <div class="menu-item-head">
+          <h3>{esc(item['name'])}</h3>
+          <span class="menu-leader" aria-hidden="true"></span>
+          <span class="menu-price">{esc(item['price'])} <span style="font-size:13px;color:var(--pepper);">({esc(item['note'])})</span></span>
+        </div>
+        <p>{esc(item['desc'])}</p>
+        <a href="{item['href']}">{esc(item['cta'])}</a>
+      </article>""")
+    return '<div class="menu-list">' + "".join(rows) + '</div>'
+
+
+def build_shoots_designs():
+    shoot_rows = "".join(f"""
+      <article class="menu-item">
+        <div class="menu-item-head">
+          <h3>{esc(name)}</h3>
+          <span class="menu-leader" aria-hidden="true"></span>
+          <span class="menu-price">{esc(price)} <span style="font-size:13px;color:var(--pepper);">({esc(with_templates)})</span></span>
+        </div>
+        <p>{esc(desc)}</p>
+      </article>""" for name, price, with_templates, desc in SHOOTS)
+
+    overview_rows = [
+        ("Kick Off shoot", "&euro;347 (&euro;297 met templates)", "1 uur shooten"),
+        ("Full Shoot Day", "&euro;847 (&euro;797 met templates)", "3 tot 4 uur shooten"),
+        ("Craveable Identity", "&euro;395 (later &euro;450)", "1 maand + 1 maand toegang"),
+        ("Branded Templates", "&euro;450 (later &euro;550)", "1 maand + 1 maand toegang"),
+        ("Andere shoots, website op maat", "In overleg", "&mdash;"),
+    ]
+    overview_table = "".join(
+        f"<tr><td>{esc(a)}</td><td>{p}</td><td>{esc(d)}</td></tr>" for a, p, d in overview_rows
+    )
+
+    body = f"""
+<section class="section-light">
+  <div class="container" style="text-align:center;max-width:680px;margin:0 auto;">
+    <span class="section-label">Shoots &amp; Designs</span>
+    <h1 class="section-title section-title-dark">Geserveerd.</h1>
+    <p style="font-size:17px;color:rgba(31,19,21,0.65);">Brand shoots, Craveable Identities en Branded Templates. Beeld dat je voelt voordat je het ziet.</p>
+  </div>
+</section>
+
+<section class="section-dark">
+  <div class="container" style="max-width:720px;margin:0 auto;text-align:center;">
+    <span class="section-label">Intro</span>
+    <p style="font-size:17px;color:rgba(245,240,235,0.9);">Elk merk hier begon met dezelfde vraag: waar moet iemand naar verlangen als hij jou ziet? Het antwoord ziet er telkens anders uit. Dat is precies de bedoeling.</p>
+    <p style="color:rgba(245,240,235,0.7);margin-top:12px;">Content gaat voor mij nooit alleen over wat zichtbaar is. Het gaat over wat voelbaar wordt. Licht, sfeer, compositie, het moment net voor de lach.</p>
+  </div>
+</section>
+
 <section class="section-light">
   <div class="container">
-    <div style="text-align:center;max-width:720px;margin:0 auto 48px;">
-      <span class="section-label">Branding</span>
-      <h1 class="section-title section-title-dark">Branding voor vrouwen die klaar zijn om te groeien.</h1>
+    <div style="text-align:center;max-width:640px;margin:0 auto 24px;">
+      <span class="section-label">Brand shoots</span>
+      <h2 class="section-title section-title-dark">Beelden die je verhaal vertellen.</h2>
+      <p style="color:rgba(31,19,21,0.65);font-size:16px;">Niet alleen je gezicht. Vooraf bouwen we een concept: locatie, styling, kleur, gevoel. Op de set regisseer ik, zodat jij alleen jezelf hoeft te zijn. Je krijgt beelden in de Studio Crave-signatuur: cinematisch, warm en editorial.</p>
     </div>
-    <div class="intro-grid">
-      <div class="intro-text">
-        <p>Een logo geeft je een merkteken. Een huisstijl geeft je een systeem. Branding is geen van beide &mdash; het is de strategie die bepaalt wat dat merkteken en dat systeem eigenlijk moeten zeggen.</p>
-        <p>Studio Crave werkt vanuit strategie, altijd eerst. Voordat er &eacute;&eacute;n kleur gekozen wordt, weten we voor wie je merk is, wat het belooft, en wat het anders maakt dan de tien andere opties die je droomklant overweegt.</p>
-        <p>Het resultaat is <a href="/the-branding-kitchen/">The Branding Kitchen</a> in de praktijk: een complete branding-oplossing via <a href="/7-course-branding-experience/">de 7-Course Branding Experience</a>, van het eerste strategiegesprek tot de dag van de launch.</p>
-      </div>
-      <div class="intro-image"><img src="/images/jasmijn2.svg" alt="Branding voor vrouwelijke ondernemers bij Studio Crave" width="900" height="1100" loading="lazy"></div>
-    </div>
+    {shoot_rows and f'<div class="menu-list">{shoot_rows}</div>'}
+    <p style="text-align:center;margin-top:20px;color:rgba(31,19,21,0.55);font-size:14px;">Buitenlocatie is gratis. Een studio of andere ruimte is voor eigen kosten. Prijzen exclusief reiskosten en btw.</p>
   </div>
 </section>
 
 <section class="section-dark">
   <div class="container">
-    <div style="text-align:center;margin-bottom:48px;">
-      <span class="section-label">Compleet pakket</span>
-      <h2 class="section-title section-title-light">Drie onderdelen, &eacute;&eacute;n proces.</h2>
-    </div>
-    <div class="pillar-grid" style="grid-template-columns:repeat(3,1fr);">
-      <div class="pillar-card"><h3><a href="/brand-strategy/" style="color:inherit;text-decoration:none;">Brand Strategie</a></h3><p>Positionering, doelgroep en boodschap &mdash; het fundament waar de rest op gebouwd wordt.</p></div>
-      <div class="pillar-card"><h3><a href="/visual-identity/" style="color:inherit;text-decoration:none;">Visuele Identiteit</a></h3><p>Logo, kleur, typografie en een systeem dat de strategie goed presenteert.</p></div>
-      <div class="pillar-card"><h3><a href="/branding-photography/" style="color:inherit;text-decoration:none;">Branding Fotografie</a></h3><p>Beeldmateriaal dat de strategie en de identiteit voor de camera brengt.</p></div>
-    </div>
+    {shoots_items_html()}
+    <p style="text-align:center;margin-top:8px;color:rgba(245,240,235,0.65);font-size:14px;max-width:640px;margin-left:auto;margin-right:auto;">Templates maak ik alleen met professionele beelden. Heb je die nog niet? Combineer ze met een shoot en je krijgt &euro;50 korting: Kick Off &euro;297, Full Shoot Day &euro;797.</p>
   </div>
 </section>
 
 <section class="section-light">
-  <div class="container" style="text-align:center;">
-    <p style="max-width:600px;margin:0 auto 28px;color:rgba(31,19,21,0.6);">Branding voor vrouwelijke ondernemers werkt het best als &eacute;&eacute;n proces, niet als drie losse aankopen.</p>
-    <a href="/the-branding-kitchen/" class="btn-outline-dark">Ontdek The Branding Kitchen</a>
+  <div class="container" style="max-width:720px;margin:0 auto;text-align:center;">
+    <span class="section-label">Editorial &amp; portret</span>
+    <p style="color:rgba(31,19,21,0.75);font-size:17px;">Naast merken fotografeer ik mensen. Portretten en koppels, cinematisch, warm en dichtbij.</p>
   </div>
 </section>
-"""
-    page(
-        "/branding/",
-        "Branding voor Vrouwelijke Ondernemers | Studio Crave",
-        "Complete branding voor vrouwelijke ondernemers: merkstrategie, visuele identiteit en branding fotografie, gebouwd als één proces via The Branding Kitchen.",
-        "Branding voor vrouwen die klaar zijn om te groeien.",
-        body,
-        trail=[("Home", "/"), ("Branding", "/branding/")],
-        extra_jsonld=[service_jsonld("Branding", "Complete branding voor vrouwelijke ondernemers, van strategie tot visuele identiteit, fotografie en launch.", "/branding/")],
-    )
 
+<section class="section-dark">
+  <div class="container">
+    <div style="text-align:center;max-width:640px;margin:0 auto 32px;">
+      <span class="section-label">Op maat</span>
+      <h2 class="section-title section-title-light">Past je vraag niet in het menu?</h2>
+    </div>
+    {addons_html()}
+  </div>
+</section>
 
-# ---------------------------------------------------------------------------
-# BRAND STRATEGY
-# ---------------------------------------------------------------------------
-def build_brand_strategy():
-    body = """
+<section class="section-dark">
+  <div class="container">
+    <div style="text-align:center;max-width:640px;margin:0 auto 32px;">
+      <span class="section-label">Overzicht</span>
+    </div>
+    <div class="tablewrap" style="overflow-x:auto;">
+      <table style="width:100%;border-collapse:collapse;color:var(--creme);">
+        <thead><tr style="text-align:left;border-bottom:1px solid rgba(245,240,235,0.25);">
+          <th style="padding:10px 14px;">Aanbod</th><th style="padding:10px 14px;">Prijs</th><th style="padding:10px 14px;">Looptijd</th>
+        </tr></thead>
+        <tbody>{overview_table}</tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
 <section class="section-light">
   <div class="container">
-    <div style="text-align:center;max-width:720px;margin:0 auto 48px;">
-      <span class="section-label">Brand Strategie</span>
-      <h1 class="section-title section-title-dark">Bouw het merk achter de business.</h1>
+    <div style="text-align:center;max-width:720px;margin:0 auto 20px;">
+      <span class="section-label">Portfolio</span>
+      <h2 class="section-title section-title-dark">Geserveerd &mdash; voor hen.</h2>
+      <p style="color:rgba(31,19,21,0.6);">Filters: Brand shoots &middot; Branded Templates &middot; Craveable Identity &middot; 7-Course merken &middot; Editorial &amp; portret.</p>
     </div>
-    <div class="intro-grid">
-      <div class="intro-text">
-        <p>Merkstrategie is het denkwerk dat gebeurt v&oacute;&oacute;rdat er iets ontworpen wordt: voor wie je bent, wat je belooft, en waarom iemand jou zou kiezen boven elke andere optie.</p>
-        <p>Bij Studio Crave omvat merkstrategie positionering, doelgroep, onderscheidend vermogen, merkpersoonlijkheid, waarden, boodschap en tone of voice. Het is het werk achter Gang 01 t/m 04 van <a href="/7-course-branding-experience/">de 7-Course Branding Experience</a>.</p>
-        <h2 style="font-size:26px;margin:32px 0 16px;color:var(--midnight);font-weight:700;">Vragen die dit beantwoordt</h2>
-        <ul class="recognition-list">
-          <li>Voor wie is dit merk eigenlijk, en voor wie bewust niet?</li>
-          <li>Wat maakt deze business anders dan de opties waar je klant tussen kiest?</li>
-          <li>Hoe klinkt het merk, en hoe klinkt het nooit?</li>
-          <li>Waar staat het merk voor als er niemand kijkt?</li>
-        </ul>
-        <p style="margin-top:20px;">Zodra de strategie staat, wordt die het briefing-document voor de <a href="/visual-identity/">visuele identiteit</a> &mdash; zodat er niets ontworpen wordt op gevoel.</p>
-      </div>
-      <div class="intro-image"><img src="/images/jasmijn4.svg" alt="Brand strategiesessie bij Studio Crave" width="900" height="900" loading="lazy"></div>
-    </div>
-    <p style="text-align:center;margin-top:40px;"><a href="/7-course-branding-experience/" class="btn-outline-dark">Bekijk waar dit past in de 7 gangen</a></p>
+    <p style="text-align:center;"><a href="/portfolio/" class="btn-outline-dark">Bekijk het portfolio</a></p>
   </div>
 </section>
-"""
-    page(
-        "/brand-strategy/",
-        "Brand Strategie & Positionering | Studio Crave",
-        "Merkstrategie en positionering voor vrouwelijke ondernemers: doelgroep, onderscheidend vermogen, merkpersoonlijkheid en tone of voice, vóór er iets ontworpen wordt.",
-        "Bouw het merk achter de business.",
-        body,
-        trail=[("Home", "/"), ("Branding", "/branding/"), ("Brand Strategie", "/brand-strategy/")],
-        extra_jsonld=[service_jsonld("Brand Strategie", "Merkstrategie, positionering en boodschap voor vrouwelijke ondernemers.", "/brand-strategy/")],
-    )
 
-
-# ---------------------------------------------------------------------------
-# VISUAL IDENTITY
-# ---------------------------------------------------------------------------
-def build_visual_identity():
-    body = """
-<section class="section-light">
-  <div class="container">
-    <div style="text-align:center;max-width:720px;margin:0 auto 48px;">
-      <span class="section-label">Visuele Identiteit</span>
-      <h1 class="section-title section-title-dark">Maak je merk onmogelijk te verwarren.</h1>
-    </div>
-    <div class="intro-grid">
-      <div class="intro-text">
-        <p>Visuele identiteit &mdash; logo, kleurenpalet, typografie, art direction en het grafische systeem dat alles samenbrengt &mdash; is geen decoratie. Het is de strategie, zichtbaar gemaakt.</p>
-        <p>Elke visuele keuze bij Studio Crave komt voort uit het werk dat eerst in <a href="/brand-strategy/">brand strategie</a> is gedaan. Een kleurenpalet wordt niet gekozen omdat het trending is; het wordt gekozen omdat het zegt wat het merk moet zeggen. Hetzelfde geldt voor de huisstijl, beeldtaal en social templates die daarna volgen.</p>
-        <h2 style="font-size:26px;margin:32px 0 16px;color:var(--midnight);font-weight:700;">Wat erbij hoort</h2>
-        <ul class="recognition-list">
-          <li>Logo en merktekens</li>
-          <li>Kleurenpalet en typografie</li>
-          <li>Art direction en beeldtaal</li>
-          <li>Grafische elementen en een bruikbare huisstijlgids</li>
-          <li>Social templates die je dagelijks kunt gebruiken</li>
-        </ul>
-        <p style="margin-top:20px;">De identiteit loopt vervolgens door in <a href="/branding-photography/">branding fotografie</a>, zodat het merk er op een foto hetzelfde uitziet als op een visitekaartje.</p>
-      </div>
-      <div class="intro-image"><img src="/images/jasmijn5.svg" alt="Visuele identiteit ontwerpproces bij Studio Crave" width="900" height="900" loading="lazy"></div>
+<section class="cta-section">
+  <div class="cta-content">
+    <h2>Zin in <em>dit soort</em> merk?</h2>
+    <div class="hero-actions">
+      <a href="/7-course-branding-experience/" class="btn-primary">Bekijk het menu</a>
+      <a href="/plan-kennismaking/" class="btn-outline-light">Plan een kennismaking</a>
     </div>
   </div>
 </section>
 """
     page(
-        "/visual-identity/",
-        "Visuele Identiteit & Huisstijl | Studio Crave",
-        "Visuele identiteit en huisstijl voortkomend uit merkstrategie: logo, kleurenpalet, typografie, art direction en een bruikbare huisstijlgids.",
-        "Maak je merk onmogelijk te verwarren.",
+        "/shoots-designs/",
+        "Shoots & Designs | Brand Shoots, Craveable Identity & Templates | Studio Crave",
+        "Brand shoots, Craveable Identity en Branded Templates in Breda. Beeld en visuele identiteit die je voelt voordat je het ziet.",
+        "Geserveerd.",
         body,
-        trail=[("Home", "/"), ("Branding", "/branding/"), ("Visuele Identiteit", "/visual-identity/")],
-        extra_jsonld=[service_jsonld("Visuele Identiteit", "Visuele identiteit en huisstijl, voortkomend uit merkstrategie.", "/visual-identity/")],
-    )
-
-
-# ---------------------------------------------------------------------------
-# BRANDING PHOTOGRAPHY
-# ---------------------------------------------------------------------------
-def build_branding_photography():
-    body = """
-<section class="section-light">
-  <div class="container">
-    <div style="text-align:center;max-width:720px;margin:0 auto 48px;">
-      <span class="section-label">Branding Fotografie</span>
-      <h1 class="section-title section-title-dark">Breng je merk tot leven.</h1>
-    </div>
-    <div class="intro-grid">
-      <div class="intro-text">
-        <p>Een merk is niet af voordat het in een foto bestaat. Branding fotografie &mdash; soms personal branding fotografie genoemd &mdash; is waar strategie en visuele identiteit getoetst worden aan een echte ruimte, echt licht en een echt persoon.</p>
-        <p>Studio Crave plant elke shoot rond het merk, niet andersom: creative direction, locatie, styling en een shotlist die aansluit op <a href="/visual-identity/">de visuele identiteit</a> die al is vastgesteld.</p>
-        <h2 style="font-size:26px;margin:32px 0 16px;color:var(--midnight);font-weight:700;">Een branding shoot met Studio Crave omvat</h2>
-        <ul class="recognition-list">
-          <li>Creative direction, gekoppeld aan je merkstrategie</li>
-          <li>Locatie- en stylingplanning</li>
-          <li>Een shotlist die past bij hoe je de beelden echt gaat gebruiken</li>
-          <li>Brand- en contentbeelden, samen opgeleverd</li>
-        </ul>
-        <p style="margin-top:20px;">Shoots vinden plaats in en rond Breda, met klanten die uit heel Brabant en daarbuiten komen &mdash; branding fotografie Nederland-breed, op aanvraag.</p>
-      </div>
-      <div class="intro-image"><img src="/images/jasmijn3.svg" alt="Branding fotoshoot in Breda" width="900" height="900" loading="lazy"></div>
-    </div>
-    <p style="text-align:center;margin-top:40px;"><a href="/portfolio/" class="btn-outline-dark">Bekijk branding fotografie in het portfolio</a></p>
-  </div>
-</section>
-"""
-    page(
-        "/branding-photography/",
-        "Branding Fotograaf Breda | Personal Branding | Studio Crave",
-        "Branding fotografie en personal branding shoots in Breda: creative direction, styling en beeld dat aansluit op je merkstrategie en visuele identiteit.",
-        "Breng je merk tot leven.",
-        body,
-        trail=[("Home", "/"), ("Branding", "/branding/"), ("Branding Fotografie", "/branding-photography/")],
-        extra_jsonld=[service_jsonld("Branding Fotografie", "Branding en personal branding fotografie voor vrouwelijke ondernemers, gevestigd in Breda.", "/branding-photography/")],
-    )
-
-
-# ---------------------------------------------------------------------------
-# BRANDING BREDA
-# ---------------------------------------------------------------------------
-def build_branding_breda():
-    body = """
-<section class="section-light">
-  <div class="container">
-    <div style="text-align:center;max-width:720px;margin:0 auto 48px;">
-      <span class="section-label">Breda</span>
-      <h1 class="section-title section-title-dark">Branding studio in Breda voor vrouwen die klaar zijn om te groeien.</h1>
-    </div>
-    <div class="intro-grid">
-      <div class="intro-text">
-        <p>Studio Crave is gevestigd in Breda, Noord-Brabant, en werkt met vrouwelijke ondernemers, founders en creatieven uit de regio &mdash; en, via video, door heel Nederland.</p>
-        <p>Lokale klanten krijgen de volledige studio-ervaring in persoon: strategiesessies, reviews van de visuele identiteit en branding shoots in en rond Breda. Klanten verderop krijgen hetzelfde 7-gangen-proces, via calls en gedeelde boards, met shootdagen ingepland wanneer reizen zinvol is.</p>
-        <h2 style="font-size:26px;margin:32px 0 16px;color:var(--midnight);font-weight:700;">Zo ziet werken met Studio Crave vanuit Breda eruit</h2>
-        <ul class="recognition-list">
-          <li>Een strategiesessie op locatie in de studio, of een koffietentje in de buurt</li>
-          <li>Branding fotografie op locatie in Breda of Brabant</li>
-          <li>De volledige <a href="/7-course-branding-experience/">7-Course Branding Experience</a>, van ingredi&euml;nt tot launch</li>
-          <li>Een merk dat meegroeit met je business, niet alleen goed oogt op dag &eacute;&eacute;n</li>
-        </ul>
-        <p style="margin-top:20px;">Waarom merkstrategie hier telt, is dezelfde reden waarom het overal telt: een groeiende business in een compacte, competitieve stad als Breda heeft een merk nodig dat meteen duidelijk is, niet eentje dat twee keer uitgelegd moet worden.</p>
-      </div>
-      <div class="intro-image"><img src="/images/jasmijn2.svg" alt="Studio Crave, branding studio in Breda" width="900" height="1100" loading="lazy"></div>
-    </div>
-    <p style="text-align:center;margin-top:40px;"><a href="/contact/" class="btn-primary">Werk met Studio Crave</a></p>
-  </div>
-</section>
-"""
-    page(
-        "/branding-breda/",
-        "Branding Breda | Branding Studio & Merkstrategie | Studio Crave",
-        "Studio Crave is een branding studio in Breda voor vrouwelijke ondernemers die klaar zijn om te groeien. Merkstrategie, positionering, visuele identiteit, fotografie en launch.",
-        "Branding studio in Breda voor vrouwen die klaar zijn om te groeien.",
-        body,
-        trail=[("Home", "/"), ("Branding in Breda", "/branding-breda/")],
-        extra_jsonld=[org_jsonld()],
+        trail=[("Home", "/"), ("Shoots & Designs", "/shoots-designs/")],
+        extra_jsonld=[service_jsonld("Shoots & Designs", "Brand shoots, Craveable Identity en Branded Templates voor ondernemers, gevestigd in Breda.", "/shoots-designs/")],
     )
 
 
 # ---------------------------------------------------------------------------
 # PORTFOLIO INDEX + CASE STUDIES
 # ---------------------------------------------------------------------------
+PORTFOLIO_FILTERS = ["Brand shoots", "Branded Templates", "Craveable Identity", "7-Course merken", "Editorial & portret"]
+
+
 def build_portfolio_index():
     cards = []
     for i, p in enumerate(PORTFOLIO):
@@ -1163,14 +1062,22 @@ def build_portfolio_index():
         <img src="/images/shoot{i+1}.svg" alt="{esc(p['name'])} brand fotografie, {esc(p['industry'])}" width="900" height="1125" loading="lazy">
         <div class="portfolio-teaser-label"><span>{esc(p['name'])}</span><small>{esc(p['client'])} &mdash; {esc(p['industry'])}</small></div>
       </a>""")
+    for p in PORTFOLIO_PLACEHOLDERS:
+        cards.append(f"""
+      <div class="portfolio-teaser" style="opacity:0.45;cursor:default;">
+        <div style="aspect-ratio:4/5;background:var(--midnight);display:flex;align-items:center;justify-content:center;color:var(--gold);font-family:var(--font-accent);font-size:13px;">Case volgt</div>
+        <div class="portfolio-teaser-label"><span>{esc(p['name'])}</span><small>{esc(p['industry'])}</small></div>
+      </div>""")
+    filters = "".join(f'<span class="chip" style="display:inline-block;border:1px solid var(--burgundy);border-radius:2px;padding:6px 14px;margin:0 8px 8px 0;font-size:13px;color:var(--burgundy);">{esc(f)}</span>' for f in PORTFOLIO_FILTERS)
     body = f"""
 <section class="section-light">
   <div class="container">
-    <div style="text-align:center;max-width:680px;margin:0 auto 48px;">
+    <div style="text-align:center;max-width:680px;margin:0 auto 32px;">
       <span class="section-label">Signature Dishes</span>
       <h1 class="section-title section-title-dark">Geselecteerd werk.</h1>
-      <p style="color:rgba(31,19,21,0.6);">Elk project hieronder doorliep de volledige <a href="/7-course-branding-experience/">7-Course Branding Experience</a> &mdash; strategie, positionering, stem, visuele identiteit, fotografie en launch.</p>
+      <p style="color:rgba(31,19,21,0.6);">Elk project hieronder doorliep de volledige <a href="/7-course-branding-experience/">7-Course Brand Experience</a>, of een losse gang via <a href="/shoots-designs/">Shoots &amp; Designs</a>.</p>
     </div>
+    <div style="text-align:center;margin-bottom:32px;">{filters}</div>
     <div class="portfolio-teaser-grid">{''.join(cards)}</div>
   </div>
 </section>
@@ -1218,7 +1125,7 @@ def build_portfolio_cases():
         page(
             f"/portfolio/{p['slug']}/",
             f"{p['name']} | Branding Case | Studio Crave",
-            f"Hoe Studio Crave {p['name']} ({p['industry']}) herpositioneerde via merkstrategie, visuele identiteit en fotografie, als onderdeel van de 7-Course Branding Experience.",
+            f"Hoe Studio Crave {p['name']} ({p['industry']}) herpositioneerde via merkstrategie, visuele identiteit en fotografie, als onderdeel van de 7-Course Brand Experience.",
             p["name"],
             body,
             trail=[("Home", "/"), ("Portfolio", "/portfolio/"), (p["name"], f"/portfolio/{p['slug']}/")],
@@ -1237,12 +1144,63 @@ def build_about():
       <div class="intro-image"><img src="/images/jasmijn2.svg" alt="Jasmijn Straver, oprichter van Studio Crave" width="900" height="1100" loading="eager"></div>
       <div class="intro-text">
         <span class="section-label">Over Jasmijn</span>
-        <h1 class="section-title section-title-dark">De chef achter de keuken.</h1>
-        <p>Ik ben Jasmijn Straver: creative director, merkstrateeg en fotograaf. Mijn achtergrond loopt van marketing en communicatie via events en NLP naar fotografie. De rode draad was altijd dezelfde: creativiteit als manier om te voelen, te verbinden en impact te maken.</p>
-        <p>Die draad liep via Selfcare Studio en Bold Visuals naar Studio Crave, mijn creative studio. The Branding Kitchen is de methode die daaruit ontstond: alles wat ik weet over merken, in zeven gangen.</p>
-        <p>De meeste branding-trajecten sturen je voor de foto's door naar iemand anders. Bij mij zitten de strategie en de camera in dezelfde keuken. Daardoor klopt het beeld met het verhaal.</p>
-        <blockquote style="font-family:var(--font-heading);font-size:22px;font-weight:700;color:var(--burgundy);border-left:3px solid var(--pepper);padding-left:20px;margin:20px 0;">Content gaat nooit alleen over wat zichtbaar is. Het gaat over wat voelbaar wordt.</blockquote>
+        <h1 class="section-title section-title-dark">Ik ben Jasmijn. Bold, eigenwijs en diepzinnig.</h1>
+        <p>Creative director, visual storyteller en merkstrateeg. Founder van Studio Crave en The Branding Kitchen&trade;.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-dark">
+  <div class="container" style="max-width:720px;margin:0 auto;">
+    <span class="section-label">Mijn verhaal</span>
+    <p style="font-size:17px;color:rgba(245,240,235,0.9);">Als kind schilderde ik stenen op de camping, maakte ik sieraden en stond ik op het toneel. Creativiteit was nooit een hobby. Het was mijn manier om te voelen en te verbinden.</p>
+    <p style="color:rgba(245,240,235,0.75);margin-top:14px;">Ik groeide op met twee ondernemende ouders en ging op mijn achttiende op mezelf wonen, in een studentenhuis met zeventien meiden. Daarna deed ik van alles: marketing, communicatie, events, branding, NLP en fotografie. Sommigen noemden het jobhoppen. Ik noem het mijn mise en place. Elke baan, elk avontuur leverde een ingredi&euml;nt op dat ik nu elke dag gebruik.</p>
+  </div>
+</section>
+
+<section class="section-light">
+  <div class="container" style="max-width:720px;margin:0 auto;">
+    <span class="section-label">De rode draad</span>
+    <p style="font-size:17px;color:rgba(31,19,21,0.75);">Samen met een vriendin richtte ik Selfcare Studio Breda op, waar het draaide om rust en esthetiek. Daarna kwam Bold Visuals, waar commerci&euml;le impact centraal stond. Vandaag komt alles samen in Studio Crave. Een studio gebouwd rond &eacute;&eacute;n principe: mensen laten verlangen.</p>
+  </div>
+</section>
+
+<section class="section-dark">
+  <div class="container" style="max-width:720px;margin:0 auto;">
+    <span class="section-label">Ambitie, geclaimd</span>
+    <p style="font-size:17px;color:rgba(245,240,235,0.9);">Iemand die dichtbij me staat zei ooit: &ldquo;De meeste mensen onderschatten jouw ambitie.&rdquo; Hij had gelijk. Ik ook, lange tijd. Nu niet meer. En precies dat gun ik jou: een merk dat net zo groot denkt als jij.</p>
+  </div>
+</section>
+
+<section class="section-light">
+  <div class="container" style="max-width:720px;margin:0 auto;">
+    <span class="section-label">Hoe ik werk</span>
+    <p style="font-size:17px;color:rgba(31,19,21,0.75);">Achter de camera ben ik op mijn best. Mijn stijl is cinematisch, warm en editorial: sterke compositie, sfeer, en een gevoel voor wat werkt. Ik vertaal identiteit naar beeld op een manier die luxe, verlangen en echtheid samenbrengt.</p>
+    <p style="color:rgba(31,19,21,0.6);margin-top:14px;">Content gaat voor mij nooit alleen over wat zichtbaar is. Het gaat over wat voelbaar wordt. Wat blijft hangen. En wat ervoor zorgt dat een merk niet meer vergeten wordt.</p>
+    <p style="color:rgba(31,19,21,0.6);margin-top:14px;">Ik werk bewust op 80%. Zo houd ik ruimte voor de 100% die ertoe doet: jouw merk, op de momenten dat het telt.</p>
+  </div>
+</section>
+
+<section class="section-dark">
+  <div class="container" style="max-width:720px;margin:0 auto;text-align:center;">
+    <span class="section-label">Studio Crave en The Branding Kitchen&trade;</span>
+    <p style="font-size:17px;color:rgba(245,240,235,0.9);">Studio Crave is mijn studio. The Branding Kitchen&trade; is hoe ik kook: zeven gangen, van je rauwe ingredi&euml;nten tot een beleving waar mensen voor terugkomen.</p>
+  </div>
+</section>
+
+<section class="section-light">
+  <div class="container" style="max-width:720px;margin:0 auto;">
+    <span class="section-label">Naast het werk</span>
+    <p style="font-size:17px;color:rgba(31,19,21,0.75);">Ik zet me in voor jongeren via R-Newt en Next Up. Omdat iedereen het verdient om gezien te worden, en dat begint jong.</p>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="cta-content">
+    <h2>Ik maak geen logo's.<br>Ik serveer merken waar mensen naar verlangen.</h2>
+    <div class="hero-actions">
+      <a href="/plan-kennismaking/" class="btn-primary">Plan een kennismaking</a>
     </div>
   </div>
 </section>
@@ -1250,8 +1208,8 @@ def build_about():
     page(
         "/about/",
         "Over Jasmijn Straver | Studio Crave — Branding Studio Breda",
-        "Jasmijn Straver is creative director, merkstrateeg en fotograaf achter Studio Crave en The Branding Kitchen — branding studio in Breda voor vrouwelijke ondernemers.",
-        "De chef achter de keuken.",
+        "Jasmijn Straver is creative director, visual storyteller en merkstrateeg. Founder van Studio Crave en The Branding Kitchen™.",
+        "Ik ben Jasmijn. Bold, eigenwijs en diepzinnig.",
         body,
         trail=[("Home", "/"), ("Over Jasmijn", "/about/")],
     )
@@ -1266,8 +1224,23 @@ def build_contact():
   <div class="container">
     <div style="text-align:center;max-width:680px;margin:0 auto 48px;">
       <span class="section-label">Contact</span>
-      <h1 class="section-title section-title-dark">Klaar om je merk craveable te maken?</h1>
-      <p style="color:rgba(31,19,21,0.6);">Vertel waar je business nu staat, en waar je merk hem naartoe moet brengen.</p>
+      <h1 class="section-title section-title-dark">Klaar om op te vallen?</h1>
+      <p style="color:rgba(31,19,21,0.65);font-size:16px;">Je hoeft niet harder te roepen. Je hoeft alleen te laten zien wie je bent, zo goed dat mensen niet meer kunnen wegkijken. Stuur me je vraag, je idee of die shoot die al maanden in je hoofd zit. Ik lees alles zelf.</p>
+    </div>
+    <div class="intro-grid" style="margin-bottom:48px;">
+      <div>
+        <h2 style="font-size:20px;color:var(--midnight);font-weight:700;margin-bottom:14px;">Contactgegevens</h2>
+        <ul class="recognition-list">
+          <li><strong>Mail of app</strong> &mdash; <a href="mailto:info@studiocrave.nl">info@studiocrave.nl</a></li>
+          <li><strong>Instagram</strong> &mdash; <a href="https://instagram.com/studiocrave.nl">@studiocrave.nl</a></li>
+          <li><strong>Locatie</strong> &mdash; Breda, Nederland</li>
+          <li><strong>KvK</strong> &mdash; [KvK-nummer]</li>
+        </ul>
+      </div>
+      <div>
+        <h2 style="font-size:20px;color:var(--midnight);font-weight:700;margin-bottom:14px;">Kort</h2>
+        <p style="color:rgba(31,19,21,0.65);">Liever direct aan tafel? <a href="/plan-kennismaking/">Plan een kennismaking</a> en we kijken samen welk menu bij jou past.</p>
+      </div>
     </div>
     <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
       <input type="hidden" name="form-name" value="contact">
@@ -1277,84 +1250,130 @@ def build_contact():
         <input id="name" name="name" type="text" required autocomplete="name">
       </div>
       <div class="form-row">
-        <label for="business">Bedrijfsnaam</label>
-        <input id="business" name="business" type="text" required autocomplete="organization">
-      </div>
-      <div class="form-row-group">
-        <div class="form-row">
-          <label for="website">Website</label>
-          <input id="website" name="website" type="url" placeholder="https://">
-        </div>
-        <div class="form-row">
-          <label for="instagram">Instagram</label>
-          <input id="instagram" name="instagram" type="text" placeholder="@jouwbedrijf">
-        </div>
+        <label for="email">E-mailadres</label>
+        <input id="email" name="email" type="email" required autocomplete="email">
       </div>
       <div class="form-row">
-        <label for="what">Wat doe je?</label>
-        <textarea id="what" name="what" rows="3" required></textarea>
+        <label for="instagram">Instagram of website</label>
+        <input id="instagram" name="instagram" type="text" placeholder="@jouwbedrijf of je website">
       </div>
       <div class="form-row">
-        <label for="struggle">Wat werkt er nu niet aan je merk?</label>
-        <textarea id="struggle" name="struggle" rows="3" required></textarea>
+        <label for="topic">Waar gaat het over?</label>
+        <select id="topic" name="topic" required>
+          <option value="">Kies een optie</option>
+          <option>7-Course Brand Experience</option>
+          <option>Brand Audit</option>
+          <option>Brand shoot</option>
+          <option>Craveable Identity</option>
+          <option>Branded Templates</option>
+          <option>Iets anders</option>
+        </select>
       </div>
-      <div class="form-row-group">
-        <div class="form-row">
-          <label for="stage">Waar sta je in je business?</label>
-          <select id="stage" name="stage" required>
-            <option value="">Kies een optie</option>
-            <option>Net begonnen</option>
-            <option>Gevestigd, klaar om te groeien</option>
-            <option>Succesvol, merk heeft het niet bijgehouden</option>
-          </select>
-        </div>
-        <div class="form-row">
-          <label for="support">Waar ben je naar op zoek?</label>
-          <select id="support" name="support" required>
-            <option value="">Kies een optie</option>
-            <option>Volledige 7-Course Branding Experience</option>
-            <option>Alleen brand strategie</option>
-            <option>Alleen visuele identiteit</option>
-            <option>Alleen branding fotografie</option>
-            <option>Nog niet zeker</option>
-          </select>
-        </div>
+      <div class="form-row">
+        <label for="what">Vertel me over je merk. Wie ben je, wat doe je, en wat wil je dat mensen voelen?</label>
+        <textarea id="what" name="what" rows="4" required></textarea>
       </div>
-      <div class="form-row-group">
-        <div class="form-row">
-          <label for="investment">Investeringsrange</label>
-          <select id="investment" name="investment">
-            <option value="">Liever niet zeggen</option>
-            <option>&euro;1.500 &ndash; &euro;3.000</option>
-            <option>&euro;3.000 &ndash; &euro;6.000</option>
-            <option>&euro;6.000+</option>
-          </select>
-        </div>
-        <div class="form-row">
-          <label for="timeline">Tijdlijn</label>
-          <select id="timeline" name="timeline">
-            <option value="">Kies een optie</option>
-            <option>Zo snel mogelijk</option>
-            <option>Binnen 3 maanden</option>
-            <option>Ik oriënteer me nog</option>
-          </select>
-        </div>
-      </div>
-      <button type="submit" class="btn-primary" style="border:none;cursor:pointer;">Stuur je aanvraag</button>
+      <button type="submit" class="btn-primary" style="border:none;cursor:pointer;">Verstuur</button>
+      <p style="font-size:13px;color:rgba(31,19,21,0.5);margin-top:10px;">Je gegevens staan veilig opgeslagen in de EU, en alleen jij en ik zien ze.</p>
     </form>
-    <div style="text-align:center;margin-top:48px;color:rgba(31,19,21,0.5);font-size:14px;">
-      Studio Crave &middot; The Branding Kitchen &middot; Breda, Noord-Brabant
+    <div style="text-align:center;margin-top:40px;color:rgba(31,19,21,0.5);font-size:14px;">
+      Studio Crave &middot; We create cravings
     </div>
   </div>
 </section>
 """
     page(
         "/contact/",
-        "Werk met Studio Crave | Branding Studio Breda",
-        "Plan een kennismaking met Studio Crave / The Branding Kitchen, een branding studio in Breda. Vertel over je business en waar je merk naartoe moet.",
-        "Klaar om je merk craveable te maken?",
+        "Contact | Studio Crave — Branding Studio Breda",
+        "Klaar om op te vallen? Stuur Jasmijn je vraag, idee of shoot, of plan direct een kennismaking met Studio Crave.",
+        "Klaar om op te vallen?",
         body,
         trail=[("Home", "/"), ("Contact", "/contact/")],
+        extra_jsonld=[org_jsonld()],
+    )
+
+
+# ---------------------------------------------------------------------------
+# PLAN KENNISMAKING
+# ---------------------------------------------------------------------------
+def build_plan_kennismaking():
+    body = f"""
+<section class="section-light">
+  <div class="container" style="text-align:center;max-width:680px;margin:0 auto;">
+    <span class="section-label">Plan kennismaking</span>
+    <h1 class="section-title section-title-dark">Eerst proeven. Dan kiezen.</h1>
+    <p style="font-size:17px;color:rgba(31,19,21,0.65);">In een kennismaking van 20 minuten kijken we samen waar je merk nu staat en welk menu bij je past. Gratis en vrijblijvend.</p>
+  </div>
+</section>
+
+<section class="section-dark">
+  <div class="container" style="max-width:720px;margin:0 auto;">
+    <span class="section-label">Wat je krijgt</span>
+    <ul class="recognition-list" style="margin-top:16px;">
+      <li>Een eerlijke eerste blik op je merk, je beeld en je boodschap</li>
+      <li>Helderheid over welke gang je nu het hardst nodig hebt</li>
+      <li>Een advies op maat: het hele menu, een losse gang, of eerst een Brand Audit</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section-light">
+  <div class="container" style="max-width:720px;margin:0 auto;">
+    <span class="section-label">Zo verloopt het daarna</span>
+    <ol style="margin-top:16px;padding-left:20px;display:flex;flex-direction:column;gap:14px;color:rgba(31,19,21,0.75);">
+      <li><strong style="font-family:var(--font-heading);color:var(--burgundy);">Kennismaken.</strong> We bespreken waar je staat en welk menu bij je past.</li>
+      <li><strong style="font-family:var(--font-heading);color:var(--burgundy);">Aan tafel.</strong> Na je boeking krijg je een welkomstmail. Je kiest zelf je wachtwoord, en je portaal staat open.</li>
+      <li><strong style="font-family:var(--font-heading);color:var(--burgundy);">Proeven.</strong> Je doet een korte quiz (welk gerecht ben jij?) en de onboarding over jou en je business. Hoe meer je vertelt, hoe persoonlijker alles wordt.</li>
+      <li><strong style="font-family:var(--font-heading);color:var(--burgundy);">Gang voor gang.</strong> Je menu gaat open. Per gang zie je wat ik doe, wat jij ermee kunt en wat je aanlevert. Je geeft akkoord of feedback, en dan pas gaat de volgende gang open.</li>
+      <li><strong style="font-family:var(--font-heading);color:var(--burgundy);">Je Signature Dish.</strong> Na de laatste gang serveer ik je hele merk op &eacute;&eacute;n bord.</li>
+    </ol>
+  </div>
+</section>
+
+<section class="section-dark">
+  <div class="container" style="max-width:720px;margin:0 auto;">
+    <span class="section-label">Korte intake</span>
+    <ul class="recognition-list" style="margin-top:16px;">
+      <li>Wie ben je en wat doe je?</li>
+      <li>Waar staat je merk nu?</li>
+      <li>Wat wil je dat mensen voelen als ze jouw merk zien?</li>
+      <li>Waar loop je tegenaan?</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section-light">
+  <div class="container" style="max-width:720px;margin:0 auto;text-align:center;">
+    <span class="section-label">Agenda</span>
+    <p style="color:rgba(31,19,21,0.5);font-size:15px;">[Hier komt de agenda-embed, bijvoorbeeld Calendly]</p>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="cta-content">
+    <h2>Je tafel staat klaar.<br>Schuif aan.</h2>
+    <div class="hero-actions">
+      <a href="/contact/" class="btn-primary">Plan een kennismaking</a>
+      <a href="/#quiz" class="btn-outline-light">Doe eerst de quiz: welk gerecht ben jij?</a>
+    </div>
+  </div>
+</section>
+
+<section class="section-light" id="faq">
+  <div class="container" style="max-width:880px;">
+    <span class="section-label" style="text-align:left;">Veelgestelde vragen</span>
+    <h2 class="section-title section-title-dark" style="text-align:left;margin-bottom:32px;">Nog vragen?</h2>
+    {faq_html()}
+  </div>
+</section>
+"""
+    page(
+        "/plan-kennismaking/",
+        "Plan een Kennismaking | Studio Crave",
+        "Plan een gratis kennismaking van 20 minuten met Studio Crave. We kijken samen waar je merk nu staat en welk menu bij je past.",
+        "Eerst proeven. Dan kiezen.",
+        body,
+        trail=[("Home", "/"), ("Plan kennismaking", "/plan-kennismaking/")],
         extra_jsonld=[org_jsonld()],
     )
 
@@ -1380,23 +1399,17 @@ def build_robots_and_sitemap(all_paths):
 
 def main():
     build_home()
-    build_branding_kitchen()
     build_seven_courses()
-    build_branding()
-    build_brand_strategy()
-    build_visual_identity()
-    build_branding_photography()
-    build_branding_breda()
+    build_shoots_designs()
     build_portfolio_index()
     build_portfolio_cases()
     build_about()
     build_contact()
+    build_plan_kennismaking()
 
     all_paths = [
-        "/", "/the-branding-kitchen/", "/7-course-branding-experience/",
-        "/branding/", "/brand-strategy/", "/visual-identity/", "/branding-photography/",
-        "/branding-breda/", "/portfolio/",
-    ] + [f"/portfolio/{p['slug']}/" for p in PORTFOLIO] + ["/about/", "/contact/"]
+        "/", "/7-course-branding-experience/", "/shoots-designs/", "/portfolio/",
+    ] + [f"/portfolio/{p['slug']}/" for p in PORTFOLIO] + ["/about/", "/contact/", "/plan-kennismaking/"]
     build_robots_and_sitemap(all_paths)
     print(f"Generated {len(all_paths)} pages + robots.txt + sitemap.xml")
 
