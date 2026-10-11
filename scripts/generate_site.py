@@ -506,6 +506,69 @@ def archetypes_html():
 # ---------------------------------------------------------------------------
 # HOME
 # ---------------------------------------------------------------------------
+POLAROID_CAPTIONS = {
+    "maison-de-vintage": "Grand-hotel-luxe",
+    "old-money-power": "Quiet confidence",
+    "editorial-noir": "Parijse editorial",
+    "la-dolce-vita": "Amalfi-zomer",
+}
+
+
+def work_slider_html():
+    """Signature Dishes op de home: polaroid + tekst per case, doorbladeren met pijlen, bolletjes, swipe of toetsenbord."""
+    n = len(PORTFOLIO)
+    tilts = ["-2deg", "1.6deg", "-1.4deg", "1.8deg"]
+    slides = []
+    for i, p in enumerate(PORTFOLIO):
+        caption = POLAROID_CAPTIONS.get(p["slug"], p["name"])
+        slides.append(f'''<div class="work-slide" data-slide="{i}" role="group" aria-roledescription="slide" aria-label="{i+1} van {n}: {esc(p["name"])}"{"" if i == 0 else " hidden"}>
+        <figure class="polaroid work-polaroid" style="--tilt:{tilts[i % len(tilts)]}">
+          <img src="/images/shoot{i+1}.svg" alt="{esc(p["name"])} brand fotografie" width="900" height="1125" loading="lazy">
+          <figcaption>{esc(caption)}</figcaption>
+        </figure>
+        <div class="work-slide-text">
+          <span class="work-count">{i+1} van {n}</span>
+          <h3>{esc(p["name"])}</h3>
+          <p class="work-client">{esc(p["client"])}, {esc(p["industry"])}</p>
+          <p>{esc(p["visual"])}</p>
+          <p class="work-result"><strong>Resultaat:</strong> {esc(p["result"])}</p>
+          <a class="work-link" href="/portfolio/{p["slug"]}/">Bekijk de case &rarr;</a>
+        </div>
+      </div>''')
+    dots = "".join(
+        f'<button type="button" class="work-dot" data-dot="{i}" aria-label="Toon {esc(p["name"])}"{" aria-current=\"true\"" if i == 0 else ""}><span></span></button>'
+        for i, p in enumerate(PORTFOLIO)
+    )
+    return f'''<div class="work-slider" id="work-slider" role="region" aria-roledescription="carousel" aria-label="Signature Dishes" tabindex="0">
+      {"".join(slides)}
+      <div class="work-controls">
+        <div class="work-dots">{dots}</div>
+        <div class="work-arrows">
+          <button type="button" class="work-arrow" id="work-prev" aria-label="Vorige case"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+          <button type="button" class="work-arrow" id="work-next" aria-label="Volgende case"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+        </div>
+      </div>
+    </div>
+    <script>
+    (function(){{
+      var slider=document.getElementById('work-slider'); if(!slider) return;
+      var slides=slider.querySelectorAll('[data-slide]'), dots=slider.querySelectorAll('[data-dot]'), n=slides.length, cur=0;
+      function show(i){{
+        cur=(i+n)%n;
+        slides.forEach(function(s,k){{ s.hidden = k!==cur; }});
+        dots.forEach(function(d,k){{ if(k===cur) d.setAttribute('aria-current','true'); else d.removeAttribute('aria-current'); }});
+      }}
+      document.getElementById('work-prev').addEventListener('click',function(){{ show(cur-1); }});
+      document.getElementById('work-next').addEventListener('click',function(){{ show(cur+1); }});
+      dots.forEach(function(d){{ d.addEventListener('click',function(){{ show(+d.getAttribute('data-dot')); }}); }});
+      slider.addEventListener('keydown',function(e){{ if(e.key==='ArrowLeft') show(cur-1); else if(e.key==='ArrowRight') show(cur+1); }});
+      var x0=null;
+      slider.addEventListener('touchstart',function(e){{ x0=e.touches[0].clientX; }},{{passive:true}});
+      slider.addEventListener('touchend',function(e){{ if(x0===null) return; var dx=e.changedTouches[0].clientX-x0; x0=null; if(Math.abs(dx)>40) show(dx<0?cur+1:cur-1); }});
+    }})();
+    </script>'''
+
+
 def build_home():
     body = f"""
 <section class="hero">
@@ -601,12 +664,7 @@ def build_home():
       <h2 class="section-title section-title-dark">Vier merken, vier werelden.</h2>
       <p style="color:rgba(31,19,21,0.6);max-width:600px;margin:0 auto;font-size:16px;">Wat er gebeurt als positionering, fotografie en design samenkomen.</p>
     </div>
-    <div class="portfolio-teaser-grid">
-      {''.join(f'''<a class="portfolio-teaser" href="/portfolio/{p["slug"]}/">
-        <img src="/images/shoot{i+1}.svg" alt="{esc(p["name"])} brand fotografie" width="900" height="1125" loading="lazy">
-        <div class="portfolio-teaser-label"><span>{esc(p["name"])}</span><small>{esc(p["industry"])}</small></div>
-      </a>''' for i, p in enumerate(PORTFOLIO))}
-    </div>
+    {work_slider_html()}
     <p style="text-align:center;margin-top:36px;"><a href="/portfolio/" class="btn-outline-dark">Bekijk het werk</a></p>
   </div>
 </section>

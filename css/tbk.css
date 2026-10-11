@@ -845,3 +845,32 @@ a.course-link { text-decoration: none; color: inherit; display: grid; }
   .menu-item-head { flex-wrap: wrap; }
   .menu-leader { display: none; }
 }
+
+/* WORK SLIDER (home — Signature Dishes als polaroids) */
+.work-slider { max-width: 1040px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px; }
+.work-slider:focus-visible { outline: 2px solid var(--gold); outline-offset: 8px; }
+.work-slide { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: clamp(36px, 6vw, 88px); align-items: center; }
+.work-slide[hidden] { display: none; }
+.work-polaroid { margin: 12px auto; width: 100%; max-width: 440px; transform: rotate(var(--tilt, -1.5deg)); }
+.work-polaroid img { width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; }
+.work-polaroid figcaption { padding-top: 16px; text-align: center; font-family: var(--font-heading); font-style: italic; font-size: 22px; color: var(--midnight); }
+.work-slide-text { display: flex; flex-direction: column; gap: 14px; max-width: 32em; }
+.work-count { font-family: var(--font-accent); font-size: 28px; color: var(--burgundy); }
+.work-slide-text h3 { font-size: clamp(36px, 4.2vw, 52px); line-height: 1.05; color: var(--midnight); }
+.work-client { font-size: 14px; font-weight: 600; color: var(--burgundy); }
+.work-result { font-size: 15px; color: var(--burgundy); }
+.work-link { align-self: flex-start; font-weight: 600; font-size: 15px; color: var(--burgundy); }
+.work-controls { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; padding-top: 28px; border-top: 1px solid rgba(107, 26, 42, 0.3); }
+.work-dots { display: flex; gap: 2px; }
+.work-dot { width: 44px; height: 44px; display: inline-flex; align-items: center; justify-content: center; border: 0; background: transparent; cursor: pointer; padding: 0; }
+.work-dot span { display: block; width: 12px; height: 12px; border-radius: 50%; border: 1px solid var(--burgundy); }
+.work-dot[aria-current="true"] span { background: var(--burgundy); }
+.work-arrows { display: flex; gap: 12px; }
+.work-arrow { width: 56px; height: 56px; border-radius: 50%; border: 1px solid var(--burgundy); background: transparent; color: var(--midnight); cursor: pointer; display: inline-flex; align-items: center; justify-content: center; transition: background 0.2s ease, color 0.2s ease; }
+.work-arrow:hover { background: var(--burgundy); color: var(--creme); }
+.work-dot:focus-visible, .work-arrow:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+@media (max-width: 760px) {
+  .work-slide { grid-template-columns: 1fr; }
+  .work-polaroid { max-width: min(340px, calc(100% - 28px)); }
+}
+@media (prefers-reduced-motion: reduce) { .work-arrow { transition: none; } }
