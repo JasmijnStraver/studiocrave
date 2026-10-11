@@ -535,10 +535,13 @@ def work_slider_html():
           <a class="work-link" href="/portfolio/{p["slug"]}/">Bekijk de case &rarr;</a>
         </div>
       </div>''')
-    dots = "".join(
-        f'<button type="button" class="work-dot" data-dot="{i}" aria-label="Toon {esc(p["name"])}"{" aria-current=\"true\"" if i == 0 else ""}><span></span></button>'
-        for i, p in enumerate(PORTFOLIO)
-    )
+    dot_parts = []
+    for i, p in enumerate(PORTFOLIO):
+        current_attr = ' aria-current="true"' if i == 0 else ""
+        dot_parts.append(
+            f'<button type="button" class="work-dot" data-dot="{i}" aria-label="Toon {esc(p["name"])}"{current_attr}><span></span></button>'
+        )
+    dots = "".join(dot_parts)
     return f'''<div class="work-slider" id="work-slider" role="region" aria-roledescription="carousel" aria-label="Signature Dishes" tabindex="0">
       {"".join(slides)}
       <div class="work-controls">
