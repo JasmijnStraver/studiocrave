@@ -319,7 +319,7 @@ h1, h2, h3, h4 { font-family: var(--font-heading); font-weight: 400; text-wrap: 
 .card-visual img { width: 100%; height: auto; display: block; }
 .card-visual-text {
   position: absolute;
-  left: 36%; top: 31%; width: 26%; height: 41%;
+  left: 35%; top: 40%; width: 30%; height: 15%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -328,22 +328,24 @@ h1, h2, h3, h4 { font-family: var(--font-heading); font-weight: 400; text-wrap: 
 }
 .card-visual-label {
   font-family: var(--font-heading);
-  font-size: 13px;
-  line-height: 1.2;
+  font-size: 10px;
+  line-height: 1.1;
   color: var(--ivory);
+  white-space: nowrap;
 }
 .card-visual-sub {
   font-family: var(--font-body);
-  font-size: 8px;
-  letter-spacing: 0.06em;
+  font-size: 5.5px;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--gold);
-  margin-top: 7px;
-  line-height: 1.4;
+  margin-top: 3px;
+  line-height: 1.2;
+  white-space: nowrap;
 }
 @media (min-width: 640px) {
-  .card-visual-label { font-size: 16px; }
-  .card-visual-sub { font-size: 9.5px; }
+  .card-visual-label { font-size: 13px; }
+  .card-visual-sub { font-size: 7.5px; }
 }
 
 /* INTRO GRID (image + text) */
