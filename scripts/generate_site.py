@@ -495,17 +495,20 @@ def course_menu_card_html():
             if losse else ""
         )
         rows.append(f"""
-      <div class="course-menu-item">
-        <a href="#{c['slug']}" class="course-menu-link">
+      <details class="course-menu-item" id="{c['slug']}">
+        <summary class="course-menu-link">
           <span class="course-menu-roman">{c['roman']}</span>
           <span class="course-menu-body">
             <span class="course-menu-name">{esc(c['name'])}</span>
             <span class="course-menu-desc">{esc(c['menu_desc'])}</span>
           </span>
           <span class="course-menu-arrow" aria-hidden="true">&rarr;</span>
-        </a>
-        {badge}
-      </div>""")
+        </summary>
+        <div class="course-menu-detail">
+          <p>{esc(c['detail'])}</p>
+          {badge}
+        </div>
+      </details>""")
     return '<div class="course-menu-card">' + "".join(rows) + '</div>'
 
 
@@ -568,7 +571,7 @@ def progress_menu_html():
         <span class="progress-fraction">{served} van 7 gangen geserveerd</span>
       </div>
       <div class="progress-list">{"".join(rows)}</div>
-      <p class="progress-footer">Signature Dish: wordt geserveerd na je laatste gang.</p>
+      <p class="progress-footer">Signature Dish &mdash; de plek waar je branding &amp; business in &eacute;&eacute;n oogopslag samenkomen, geserveerd na je laatste gang.</p>
     </div>"""
 
 
@@ -885,22 +888,6 @@ def build_home():
 # 7-COURSE BRAND EXPERIENCE (methode + traject + portaal + prijs, in één)
 # ---------------------------------------------------------------------------
 def build_seven_courses():
-    course_sections = []
-    for i, c in enumerate(COURSES):
-        bg = "section-light" if i % 2 == 0 else "section-dark"
-        title_cls = "section-title-dark" if i % 2 == 0 else "section-title-light"
-        course_sections.append(f"""
-<section class="{bg}" id="{c['slug']}">
-  <div class="container">
-    <div class="course-detail">
-      <div class="course-detail-number">{c['n']}</div>
-      <div>
-        <h2 class="{title_cls}" style="font-size:clamp(28px,3.4vw,42px);font-weight:600;margin-bottom:14px;">{esc(c['name'])}</h2>
-        <p style="max-width:640px;">{esc(c['detail'])}</p>
-      </div>
-    </div>
-  </div>
-</section>""")
     body = f"""
 <section class="section-light">
   <div class="container" style="text-align:center;max-width:720px;margin:0 auto;">
@@ -933,7 +920,6 @@ def build_seven_courses():
     {course_menu_card_html()}
   </div>
 </section>
-{''.join(course_sections)}
 
 <section class="section-burgundy">
   <span class="bg-word bottom" aria-hidden="true">DISH</span>
@@ -964,16 +950,17 @@ def build_seven_courses():
 </section>
 
 <section class="section-dark">
-  <div class="container" style="max-width:780px;margin:0 auto;text-align:center;">
-    <span class="section-label">Drie momenten samen</span>
-    <p style="color:rgba(245,240,235,0.85);font-size:17px;">We spreken elkaar drie keer persoonlijk: bij de start, halverwege en bij de afronding. Daartussen ben ik bereikbaar via je portaal, de app of mail.</p>
-  </div>
-</section>
-
-<section class="section-light">
-  <div class="container" style="max-width:780px;margin:0 auto;text-align:center;">
-    <span class="section-label">Heb je al iets?</span>
-    <p style="font-size:17px;color:rgba(31,19,21,0.75);">Staat je logo al, of je kleuren? Dan vullen we die gang met uitbreidend werk van gelijke waarde, zoals een extra templateset of een uitgebreid moodboard. Je betaalt nooit voor iets wat je al hebt.</p>
+  <div class="container">
+    <div class="intro-grid" style="max-width:900px;margin:0 auto;">
+      <div>
+        <span class="section-label" style="text-align:left;">Drie momenten samen</span>
+        <p style="color:rgba(245,240,235,0.85);font-size:17px;">We spreken elkaar drie keer persoonlijk: bij de start, halverwege en bij de afronding. Daartussen ben ik bereikbaar via je portaal, de app of mail.</p>
+      </div>
+      <div>
+        <span class="section-label" style="text-align:left;">Heb je al iets?</span>
+        <p style="font-size:17px;color:rgba(245,240,235,0.85);">Staat je logo al, of je kleuren? Dan vullen we die gang met uitbreidend werk van gelijke waarde, zoals een extra templateset of een uitgebreid moodboard. Je betaalt nooit voor iets wat je al hebt.</p>
+      </div>
+    </div>
   </div>
 </section>
 
