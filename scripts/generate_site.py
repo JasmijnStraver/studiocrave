@@ -714,8 +714,11 @@ def build_home():
         <p>Je bent goed in wat je doet. Je klanten weten het. Maar online zie je eruit als iedereen. Dezelfde templates, dezelfde zinnen, dezelfde stockfoto's. Fastfood-branding.</p>
         <p>Bij Studio Crave krijgt je merk een eigen smaak. Een verhaal dat klopt, beelden die blijven hangen, en een stem die meteen als jou klinkt. Zodat de juiste mensen niet alleen kijken, maar blijven.</p>
       </div>
-      <div class="intro-image">
-        <img src="/images/jasmijn6.svg" alt="The Branding Kitchen, signature details" width="900" height="900" loading="lazy">
+      <div class="intro-image-wrap">
+        <div class="intro-image">
+          <img src="/images/jasmijn6.svg" alt="The Branding Kitchen, signature details" width="900" height="900" loading="lazy">
+        </div>
+        <div class="badge-circle top-left"><img src="/images/cloche-ornament.png" alt="Je merk, straks onthuld"></div>
       </div>
     </div>
   </div>
@@ -923,9 +926,20 @@ def build_seven_courses():
 
 <section class="section-burgundy">
   <span class="bg-word bottom" aria-hidden="true">DISH</span>
-  <div class="container" style="max-width:780px;margin:0 auto;text-align:center;">
-    <span class="section-label">De Signature Dish</span>
-    <p style="font-size:17px;color:rgba(245,240,235,0.9);">Na de zeven gangen serveer ik je Signature Dish: je hele merk op &eacute;&eacute;n bord. Je verhaal, je toon, je methode, je kleuren, je beelden en je templates, bij elkaar en altijd van jou. We sluiten af met een call waarin we je volgende 90 dagen uitzetten.</p>
+  <div class="container">
+    <div class="intro-grid" style="align-items:center;">
+      <div class="card-visual">
+        <img src="/images/tray-card-ornament.png" alt="Signature Dish, geserveerd op tafel" width="596" height="796" loading="lazy">
+        <div class="card-visual-text">
+          <span class="card-visual-label">Signature<br>Dish</span>
+          <span class="card-visual-sub">Na je laatste&nbsp;gang</span>
+        </div>
+      </div>
+      <div>
+        <span class="section-label">De Signature Dish</span>
+        <p style="font-size:17px;color:rgba(245,240,235,0.9);">Na de zeven gangen serveer ik je Signature Dish: je hele merk op &eacute;&eacute;n bord. Je verhaal, je toon, je methode, je kleuren, je beelden en je templates, bij elkaar en altijd van jou. We sluiten af met een call waarin we je volgende 90 dagen uitzetten.</p>
+      </div>
+    </div>
   </div>
 </section>
 
