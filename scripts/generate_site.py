@@ -702,12 +702,12 @@ def build_home():
   </div>
 </div>
 
-<section class="section-light">
+<section class="section-light section-overlap">
   <div class="container">
     <div class="intro-grid">
       <div class="intro-text">
         <span class="section-label">Intro</span>
-        <h2 class="section-title section-title-dark">Fastfood-branding is overal.</h2>
+        <h2 class="section-title section-title-dark">Fastfood-branding is <em>overal</em>.</h2>
         <p>Je bent goed in wat je doet. Je klanten weten het. Maar online zie je eruit als iedereen. Dezelfde templates, dezelfde zinnen, dezelfde stockfoto's. Fastfood-branding.</p>
         <p>Bij Studio Crave krijgt je merk een eigen smaak. Een verhaal dat klopt, beelden die blijven hangen, en een stem die meteen als jou klinkt. Zodat de juiste mensen niet alleen kijken, maar blijven.</p>
       </div>
@@ -718,7 +718,8 @@ def build_home():
   </div>
 </section>
 
-<section class="section-dark">
+<section class="section-burgundy">
+  <span class="bg-word bottom" aria-hidden="true">SMAAK</span>
   <div class="container">
     <span class="section-label">Waar we voor staan</span>
     <ul class="recognition-list" style="max-width:720px;margin-top:20px;">
@@ -756,6 +757,7 @@ def build_home():
 </section>
 
 <section class="section-dark">
+  <span class="bg-word top" aria-hidden="true">CRAVE</span>
   <div class="container" style="text-align:center;max-width:640px;margin:0 auto;">
     <span class="section-label">Twee namen, &eacute;&eacute;n keuken</span>
     <p style="color:rgba(247,240,236,0.85);font-size:17px;">Studio Crave is mijn studio. The Branding Kitchen&trade; is hoe ik kook: zeven gangen, van je rauwe ingredi&euml;nten tot een beleving waar mensen voor terugkomen.</p>
@@ -913,6 +915,7 @@ def build_seven_courses():
 </section>
 
 <section class="section-dark">
+  <span class="bg-word top" aria-hidden="true">FASTFOOD</span>
   <div class="container" style="max-width:780px;margin:0 auto;text-align:center;">
     <span class="section-label">Het probleem</span>
     <p style="font-size:19px;color:var(--creme);">Je bent goed in wat je doet. Echt goed. En toch kiest je ideale klant voor iemand anders. Niet omdat die beter is. Omdat die beter smaakt.</p>
@@ -932,7 +935,8 @@ def build_seven_courses():
 </section>
 {''.join(course_sections)}
 
-<section class="section-dark">
+<section class="section-burgundy">
+  <span class="bg-word bottom" aria-hidden="true">DISH</span>
   <div class="container" style="max-width:780px;margin:0 auto;text-align:center;">
     <span class="section-label">De Signature Dish</span>
     <p style="font-size:17px;color:rgba(245,240,235,0.9);">Na de zeven gangen serveer ik je Signature Dish: je hele merk op &eacute;&eacute;n bord. Je verhaal, je toon, je methode, je kleuren, je beelden en je templates, bij elkaar en altijd van jou. We sluiten af met een call waarin we je volgende 90 dagen uitzetten.</p>
@@ -1069,11 +1073,12 @@ def build_shoots_designs():
   <div class="container" style="text-align:center;max-width:680px;margin:0 auto;">
     <span class="section-label">Shoots &amp; Designs</span>
     <h1 class="section-title section-title-dark">Geserveerd.</h1>
-    <p style="font-size:17px;color:rgba(31,19,21,0.65);">Brand shoots, Craveable Identities en Branded Templates. Beeld dat je voelt voordat je het ziet.</p>
+    <p style="font-size:17px;color:rgba(31,19,21,0.65);">Brand shoots, Craveable Identities en Branded Templates. Beeld dat je voelt <em>voordat</em> je het ziet.</p>
   </div>
 </section>
 
-<section class="section-dark">
+<section class="section-burgundy section-overlap">
+  <span class="bg-word top" aria-hidden="true">VERLANGEN</span>
   <div class="container" style="max-width:720px;margin:0 auto;text-align:center;">
     <span class="section-label">Intro</span>
     <p style="font-size:17px;color:rgba(245,240,235,0.9);">Elk merk hier begon met dezelfde vraag: waar moet iemand naar verlangen als hij jou ziet? Het antwoord ziet er telkens anders uit. Dat is precies de bedoeling.</p>
@@ -1265,7 +1270,10 @@ def build_about():
 <section class="section-light">
   <div class="container">
     <div class="intro-grid" style="align-items:center;">
-      <div class="intro-image"><img src="/images/jasmijn2.svg" alt="Jasmijn Straver, oprichter van Studio Crave" width="900" height="1100" loading="eager"></div>
+      <div class="intro-image-wrap">
+        <div class="intro-image"><img src="/images/jasmijn2.svg" alt="Jasmijn Straver, oprichter van Studio Crave" width="900" height="1100" loading="eager"></div>
+        <div class="badge-circle bottom-right"><img src="/images/sc-monogram-relief.png" alt="Studio Crave monogram"></div>
+      </div>
       <div class="intro-text">
         <span class="section-label">Over Jasmijn</span>
         <h1 class="section-title section-title-dark">Ik ben Jasmijn. Bold, eigenwijs en diepzinnig.</h1>
